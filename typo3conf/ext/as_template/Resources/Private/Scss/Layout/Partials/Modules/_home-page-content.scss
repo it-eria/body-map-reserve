@@ -1,0 +1,140 @@
+.content-line {
+  padding-top: 60px;
+}
+
+.panel-group.panel-news {
+  border: 2px solid $grey_20;
+  border-radius: 0;
+  .panel {
+    border-bottom: 2px solid $grey_20;
+    border-radius: 0;
+    box-shadow: none;
+    &:first-child, &:last-child {
+      border-bottom: none;
+    }
+		&.accordion-header {
+	    background-color: $grey_5;
+	    height: 60px;
+	    border-radius: 0;
+	    h2 {
+	      font-family: 'DaxlinePro-Medium';
+	      font-size: 24px;
+	      line-height: 32px;
+	      float: left;
+	      color: $grey_50;
+	    }
+	    a {
+	      display: block;
+	      float: right;
+	      color: $grey_50;
+	      position: relative;
+	      left: -15px;
+	      text-decoration: none;
+	      font-family: 'DaxlinePro-Medium';
+	      font-size: 18px;
+	      line-height: 32px;
+	      &:after {
+	        content: '';
+	        display: block;
+	        width: 10px;
+	        height: 10px;
+	        border: 2px solid $grey_50;
+	        -webkit-transform: rotate(45deg);
+	        -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	        border-bottom: none;
+	        border-left: none;
+	        position: absolute;
+	        right: -15px;
+	        top: 12px;
+	      }
+	      &:hover {
+	        color: $grey;
+
+	        &:after {
+	          border-color: $grey;
+	        }
+	      }
+	    }
+	    &:after {
+	      content: '';
+	      display: block;
+	      clear: both;
+	    }
+	  }
+		.panel-heading {
+	    padding: 15px 15px;
+	  }
+	  .panel-heading + .panel-collapse > {
+	    .panel-body, .list-group {
+	      border-top: none;
+	    }
+	  }
+		.accordion-btn {
+	    position: relative;
+	    display: block;
+	    text-decoration: none;
+	    font-family: 'DaxlinePro-Bold';
+	    font-size: 18px;
+	    color: $grey;
+	    padding: 0;
+	    padding-right: 35px;
+	    background: none;
+	    .tag {
+	      color: $grey_50;
+	    }
+	    .dropdown-btn {
+	      right: 0;
+	      border-color: $grey;
+	    }
+	    &.collapsed {
+	      background: none;
+				font-family: 'DaxlinePro-Bold';
+	      .dropdown-btn {
+	        border-color: $grey_50;
+	        top: 0;
+	      }
+	    }
+	  }
+	  .panel-body {
+	    background-color: transparent;
+	    padding: 0 15px 15px;
+	    p {
+	      font-family: 'DaxlinePro-Regular';
+	      font-size: 18px;
+	      color: $grey;
+	    }
+	    .more-link {
+	      font-family: 'DaxlinePro-Bold';
+	      font-size: 18px;
+	      position: relative;
+	      color: $grey;
+	      text-decoration: none;
+	      &:after {
+	        content: '';
+	        display: block;
+	        width: 10px;
+	        height: 10px;
+	        border: 2px solid $grey;
+	        -webkit-transform: rotate(45deg);
+	        -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	        border-bottom: none;
+	        border-left: none;
+	        position: absolute;
+	        right: -15px;
+	        top: 8px;
+	      }
+	    }
+	  }
+  }
+  .date-btn {
+    font-family: 'DaxlinePro-Bold';
+    font-size: 18px;
+    color: $grey;
+    text-decoration: none;
+    &.collapsed {
+      color: $grey_50;
+    }
+  }
+}

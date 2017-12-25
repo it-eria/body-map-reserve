@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="typo3conf/ext/as_template/Resources/Public/StyleSheets/bootstrap.css">
+    <link rel="stylesheet" href="typo3conf/ext/as_template/Resources/Public/StyleSheets/slick.css">
+    <link rel="stylesheet" href="typo3conf/ext/as_template/Resources/Public/StyleSheets/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSDltqySiKEx1BFBzc2ulj3NMIT-_H4Q0&extension=.js"></script> 
+    <script src="https://cdn.mapkit.io/v1/infobox.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
+    <link href="https://cdn.mapkit.io/v1/infobox.css" rel="stylesheet" > 
+</head>
+<body data-spy="scroll" data-target="#asideScrollSpy" data-offset="10">
+    <header class="header" id="header"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <a href="#" class="logo">
+                        <img src="typo3conf/ext/as_template/Resources/Public/Images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-9 col-md-10 hidden-md hidden-lg">
+                    <ul class="header__top-nav header__top-nav_m">
+                        <li>
+                            <a class="btn" role="button" data-toggle="collapse" href="#searchFieldMobile"><span class="search-ico_mobile"></span></a>
+                            <div id="searchFieldMobile" class="collapse">
+                                <form action="">
+                                    <input type="text" placeholder="search">
+                                    <input type="submit" value="">
+                                </form>
+                            </div>
+                        </li>
+                        <li><a href="#"><span class="plus-ico_mobile"></span></a></li>
+                        <li>
+                            <a href="#" class="burger-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-10">
+                    <ul class="header__top-nav">
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Anreise</a></li>
+                        <li><a href="#">Lageplan</a></li>
+                        <li><a href="#">Presse</a></li>
+                        <li><a href="#">Stellenangebote</a></li>
+                        <li><a href="#">Ihre Meinung</a></li>
+                        <li class="in-border"><a href="#">Notfall <span class="plus-ico"></span></a></li>
+												<li class="in-border">
+                             <a class="btn collapsed" role="button" data-toggle="collapse" href="#searchField">Suche <span class="search-ico"></span></a>
+                             <div id="searchField" class="collapse">
+                                 <form action="">
+                                     <input type="text" placeholder="Suchbegriff eingeben">
+                                     <input type="submit" value="Los">
+                                 </form>
+                             </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+				<nav class="header__main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 unrelative-position">
+                        <ul class="menu-items">
+                            <li>
+                                <a href="#">Patienten <span class="f_regular">&</span> Besucher</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="b-thumbnail">
+                                                    <a href="#"><img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-1.jpg" alt="thumbnail"></a>
+                                                    <div class="b-thumbnail__link b-thumbnail__link_blue">
+                                                        <a href="#">Experten finden</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="links-list">
+                                                    <li><a href="#">Ihren Aufenthalt planen</a></li>
+                                                    <li><a href="#">Anreisen & Parken</a></li>
+                                                    <li><a href="#">Besuch bekommen</a></li>
+                                                    <li><a href="#">Einkaufen & Services</a></li>
+                                                    <li><a href="#">Nach Ihrem Aufenthalt</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4 col-md-offset-1">
+                                                <ul class="links-list">
+                                                    <li><a href="#">Qualität & Sicherheit</a></li>
+                                                    <li><a href="#">Hygiene im Klinikum</a></li>
+                                                    <li><a href="#">An klinischen Studien teilnehmen</a></li>
+                                                    <li><a href="#">Veranstaltungen & Termine</a></li>
+                                                </ul>
+                                                <div class="b-thumbnail">
+                                                    <a href="#"><img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-2.jpg" alt="thumbnail"></a>
+                                                    <div class="b-thumbnail__link b-thumbnail__link_green">
+                                                        <a href="#">Häufige Fragen</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-md-offset-1">
+                                                <a href="#" class="more-link more-link_blue">Lob & Tadel</a>
+                                                <a href="#" class="more-link more-link_green">Mediathek</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Experten finden</a></li>
+                                    <li><a href="#">Ihren Aufenthalt planen</a></li>
+                                    <li><a href="#">Anreisen & Parken</a></li>
+                                    <li><a href="#">Besuch bekommen</a></li>
+                                    <li><a href="#">Hygiene im Klinikum</a></li>
+                                    <li><a href="#">Nach Ihrem Aufenthalt</a></li>
+                                    <li><a href="#">Einkaufen & Services</a></li>
+                                    <li><a href="#">An klinischen Studien teilnehmen</a></li>
+                                    <li><a href="#">Veranstaltungen & Termine</a></li>
+                                    <li><a href="#">Mediathek</a></li>
+                                    <li><a href="#">Lob und Tadel</a></li>
+                                    <li><a href="#">Häufige Fragen</a></li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="#">Kliniken <span class="f_regular">&</span> Zentren</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <a href="#" class="more-link more-link_blue">Kliniken von A bis Z</a>
+                                                <a href="#" class="more-link more-link_green">Zentren</a>
+                                                <a href="#" class="more-link more-link_white">Institute</a>
+                                            </div>
+                                            <div class="col-md-8 col-md-offset-1">
+                                                <h2>
+                                                    <span class="f_medium">Die Ulmer Universitätsmedizin</span>
+                                                    bietet Ihnen fächerübergreifende universitäre Spitzenmedizin, die Krankenversorgung, Forschung und Lehre verbindet.
+                                                </h2>
+																								<div class="row">
+																									<div class="col-md-6">
+																										<div class="b-thumbnail">
+                                                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-3.jpg" alt="thumbnail">
+                                                    </div>
+																									</div>
+																									<div class="col-md-6">
+																										<ul class="links-list">
+                                                        <li><a href="#">Infos für Zuweiser</a></li>
+                                                        <li><a href="#">Experten finden</a></li>
+                                                        <li><a href="#">Seltene Erkrankungen</a></li>
+                                                    </ul>
+																									</div>
+																								</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Über uns</a></li>
+                                    <li><a href="#">Sprechstunden / Ambulanzen</a></li>
+                                    <li><a href="#">Infos zum Klinikaufenthalt</a></li>
+                                    <li><a href="#">Infos für Ärzte</a></li>
+                                    <li><a href="#">Forschung/Klinische Studien</a></li>
+                                    <li><a href="#">Lehre</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Forschung</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h2>
+                                                    <span class="f_medium">Die Ulmer Universitätsmedizin</span>
+                                                    bietet Ihnen fächerübergreifende universitäre Spitzenmedizin, die Krankenversorgung, Forschung und Lehre verbindet.
+                                                </h2>
+																								<div class="row">
+																									<div class="col-md-7">
+																										<div class="b-thumbnail">
+                                                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-4.jpg" alt="thumbnail">
+                                                    </div>
+																									</div>
+																									<div class="col-md-5">
+																										<ul class="links-list">
+                                                        <li><a href="#">Forschungsschwerpunkte</a></li>
+                                                        <li><a href="#">Aktuelle klinische Studien</a></li>
+                                                        <li><a href="#">Medizinische Fakultät</a></li>
+                                                        <li><a href="#">Ansprechpartner</a></li>
+                                                        <li><a href="#">Veranstaltungen & Kongresse</a></li>
+                                                    </ul>
+																									</div>
+																								</div>
+
+                                            </div>
+                                            <div class="col-md-3 col-md-offset-2">
+                                                <h2><span class="f_medium">Klinische Studien finden</span></h2>
+                                                <div class="dropdown show">
+                                                    <a class="flyout-btn flyout-btn_blue dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Fachabteilung wählen <span class="dropdown-arrow"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">item 1</a>
+                                                        <a class="dropdown-item" href="#">item 2</a>
+                                                        <a class="dropdown-item" href="#">item 3</a>
+                                                        <a class="dropdown-item" href="#">item 4</a>
+                                                        <a class="dropdown-item" href="#">item 5</a>
+                                                        <a class="dropdown-item" href="#">item 6</a>
+                                                    </div>
+                                                </div>
+                                                <p class="divider">
+                                                    <span class="line"></span>
+                                                    oder
+                                                    <span class="line"></span>
+                                                </p>
+                                                <div class="flyout-btn flyout-btn_green">
+                                                    <form action="">
+                                                        <input type="text" placeholder="Stichwort eingeben">
+                                                        <input type="submit" value="">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Forschungsschwerpunkte</a></li>
+                                    <li><a href="#">Aktuelle klinische Studien am Uniklinikum</a></li>
+                                    <li><a href="#">Medizinische Fakultät</a></li>
+                                    <li><a href="#">Ansprechpartner</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Ausbildung <span class="f_regular">&</span> Karriere</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <ul class="links-list">
+                                                    <li><a href="#">Berufsgruppen</a></li>
+                                                    <li><a href="#">Arbeiten im Uniklinikum Ulm</a></li>
+                                                    <li><a href="#">Ausbildung & Studium</a></li>
+                                                    <li><a href="#">Stellenangebote</a></li>
+                                                    <li><a href="#">Jetzt bewerben</a></li>
+                                                </ul>
+                                            </div>
+																						<div class="col-md-5 col-md-offset-1">
+                                              <div class="b-thumbnail">
+                                                  <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-5.jpg" alt="thumbnail">
+                                                  <div class="b-thumbnail__link b-thumbnail__link_transp">
+                                                      <a href="#">Werden Sie Teil unseres Teams!</a>
+                                                  </div>
+                                                  <div class="b-thumbnail__btn-block">
+                                                      <a href="#" class="more-link more-link_blue">Pflege</a>
+                                                      <a href="#" class="more-link more-link_green">Ärzte</a>
+                                                  </div>
+                                              </div>
+                                            </div>
+																						<div class="col-md-3">
+																							<ul class="links-list">
+                                                  <li><a href="#">Medizin-Studenten & PJ-ler</a></li>
+                                                  <li><a href="#">Wissenschaftler</a></li>
+                                                  <li><a href="#">Medizinisch-technischer Dienst</a></li>
+                                                  <li><a href="#">Therapeuten</a></li>
+                                                  <li><a href="#">Verwaltung, Technik & IT</a></li>
+                                                  <li><a href="#">BFD / FSJ</a></li>
+                                              </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Berufsgruppen</a></li>
+                                    <li><a href="#">Arbeiten am Uniklinikum Ulm</a></li>
+                                    <li><a href="#">Stellenmarkt / Jetzt bewerben</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Über uns</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <ul class="links-list">
+                                                    <li><a href="#">Leitbild</a></li>
+                                                    <li><a href="#">Management</a></li>
+                                                    <li><a href="#">Pflege am UKU</a></li>
+                                                    <li><a href="#">Zentrale Einrichtungen</a></li>
+                                                    <li><a href="#">Zahlen & Fakten</a></li>
+                                                    <li><a href="#">Dienstleistungsgesellschaft</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3 col-md-offset-1">
+                                                <ul class="links-list">
+                                                    <li><a href="#">Universitätsgesellschaft</a></li>
+                                                    <li><a href="#">Universitätsstiftung</a></li>
+                                                    <li><a href="#">Publikationen & Downloads</a></li>
+                                                    <li><a href="#">Soziale Verantwortung</a></li>
+                                                    <li><a href="#">International</a></li>
+                                                    <li><a href="#">Kooperierende Einrichtungen</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4 col-md-offset-1">
+                                                <ul class="links-list">
+                                                    <li class="bt">
+                                                        <a href="#">
+																													<span class="date">
+	                                                            01. April 2017, Stadthaus Ulm
+	                                                        </span>
+                                                            Keine bösen Überraschungen!
+                                                            <span class="f_light">
+                                                                Information und Motivation
+                                                                zur Darmkrebsvorsorge <span class="f_medium">></span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <a href="#" class="more-link more-link_blue more-link_fz">Aktuelles</a>
+                                                    </div>
+                                                    <div class="col-md-6 col-md-offset-1">
+                                                        <a href="#" class="more-link more-link_green more-link_fz">Veranstaltungen</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Zahlen & Fakten</a></li>
+                                    <li><a href="#">Leitbild</a></li>
+                                    <li><a href="#">Management</a></li>
+                                    <li><a href="#">Zentrale Einrichtungen</a></li>
+                                    <li><a href="#">Pflege am UKU</a></li>
+                                    <li><a href="#">Dienstleistungsgesellschaft Universitätsklinikum Ulm mbH</a></li>
+                                    <li><a href="#">Universitätsgesellschaft</a></li>
+                                    <li><a href="#">Universitätsstiftung</a></li>
+                                    <li><a href="#">Veranstaltungen & Termine</a></li>
+                                    <li><a href="#">Aktuelles & Publikationen</a></li>
+                                    <li><a href="#">Soziale Verantwortung</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Kooperierende Einrichtungen</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="header__top-nav_mob hidden-md hidden-lg">
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Anreise</a></li>
+                            <li><a href="#">Lageplan</a></li>
+                            <li><a href="#">Presse</a></li>
+                            <li><a href="#">Stellenangebote</a></li>
+                            <li><a href="#">Ihre Meinung</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="#"></a></li>
+                            <li><a href="#">Frauenklinik</a></li>
+                            <li><a href="#">Schwerpunkte</a></li>
+                            <li><a href="#">Geburtshilfe</a></li>
+                            <li class="active">Endometriosezentrum</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+				<div class="row">
+            <div class="col-xs-12">
+                <div class="klinik-banner">
+                    <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/banner-3.jpg" alt="banner">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <aside class="fixed-nav col-md-2 hidden-xs hidden-sm " id="asideScrollSpy">
+                <ul class="nav" id="affixList" data-spy="affix">
+                    <li><a href="#header">Unser Profil</a></li>
+                    <li><a href="#line-1">Sprechstunde</a></li>
+                    <li><a href="#line-2">Unser Team</a></li>
+                    <li><a href="#line-3">Symptomatik</a></li>
+                    <li><a href="#line-4">Diagnostik & Therapie</a></li>
+                    <li><a href="#line-5">Patienteninformationen</a></li>
+										<li><a href="#line-6">Qualität</a></li>
+                    <li><a href="#line-7">Impressionen aus der Klinik</a></li>
+										<li><a href="#line-8">Downloads</a></li>
+                    <li><a href="#line-9">Weitere Themen</a></li>
+										<li><a href="#map">Adresse und Anfahrt</a></li>
+                </ul>
+            </aside>
+            <div class="col-xs-12 col-md-8">
+                <section>
+                    <div class="row">
+                        <div class="col-xs-12">
+													<div class="intro">
+                            <h1>Endometriosezentrum</h1>
+                            <h2>Eine Erkrankung mit vielen Gesichtern</h2>
+                            <p>
+                                Die Endometriose gilt als „Chamäleon“ unter den gutartigen gynäkologischen 
+                                Erkrankungen, da sie in der Ausprägung und den klinischen Beschwerden sehr vielfältig 
+                                und individuell unterschiedlich abläuft und häufig auch mit unerfülltem Kinderwunsch 
+                                einhergeht. In Deutschland ist etwa jede zehnte Frau zwischen 15 und 45 Jahren von 
+                                einer Endometriose betroffen, darunter auch viele junge Frauen. Die chronische Erkrankung 
+                                setzt oft schon mit der ersten Regelblutung ein. 
+                            </p>
+                            <p>
+                                Wir sind spezialisiert auf das Erkennen und die Behandlung der Endometriose nach 
+                                den neuesten wissenschaftlichen Erkenntnissen und Leitlinien. Die Stiftung Endometrioseforschung 
+                                (SEF) hat unsere hohe Behandlungsqualität mit der Zertifizierung als Endometriosezentrum bestätigt. 
+                            </p>
+                            <p>
+                                Unser kompetentes und erfahrenes Team steht Ihnen im Rahmen unserer Spezialsprechstunde 
+                                bei Verdacht auf Endometriose oder einer bestehenden Endometrioseerkrankung zur 
+                                Therapieplanung oder zur Einholung einer Zweitmeinung zur Verfügung. 
+                            </p>
+                            <h5>
+                                Wir bieten Ihnen modernste Medizin auf höchstem universitären Niveau:
+                            </h5>
+                            <ul>
+                                <li>Ausführliches und individuelles Beratungsgespräch</li>
+                                <li>Umfassende Diagnostik mit hochauflösenden bildgebenden Verfahren  </li>
+                                <li>Individuelles Therapiekonzept entsprechend Ihren Bedürfnissen und Wünschen </li>
+                                <li>Schonende Entfernung von Endometrioseherden durch minimal-invasive Operationsverfahren</li>
+                                <li>Parallele Beratung und Betreuung in unserem Kinderwunschzentrum bei unerfülltem Kinderwunsch</li>
+                                <li>Enge interdisziplinäre Zusammenarbeit mit unseren Kooperationspartnern</li>
+                            </ul>
+													</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-12 col-md-2">
+                <section>
+									<div class="klinik-aside-widget">
+                    <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/widget-avatar-1.jpg" alt="thumbnail" class="widget-avatar">
+                    <h2 class="widget-title widget-title_b">
+                        Dr. Peter <br>
+                        Widschwendter
+                    </h2>
+                    <p class="widget-text-about">
+                        Oberarzt, Leiter Endometriosezentrum
+                    </p>
+                    <div class="b-links">
+                        <a href="#"><span class="contact-ico"></span>Kontakt</a>
+                        <a href="#"><span class="details-ico"></span>Details</a>
+                    </div>
+									</div>
+                </section>
+                <section>
+									<div class="klinik-aside-widget">
+                    <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/widget-avatar-2.jpg" alt="thumbnail" class="widget-avatar">
+                    <h2 class="widget-title widget-title_b">
+                        Prof. Dr.  <br>
+                        Katharina Hancke
+                    </h2>
+                    <p class="widget-text-about">
+                        Oberärztin, Stv. Leiterin Endometriosezentrum
+                    </p>
+                    <div class="b-links">
+                        <a href="#"><span class="contact-ico"></span>Kontakt</a>
+                        <a href="#"><span class="details-ico"></span>Details</a>
+                    </div>
+									</div>
+                </section>
+            </div>
+				</div>
+
+				<div class="row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <section>
+									<div id="line-1">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h3 class="content-line__title content-line__title_m">
+                                Endometriosesprechstunde
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="contact-box">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 mb">
+                                        <span class="round-ico round-ico_blue round-ico_phone"></span>
+                                        <p>
+                                            <span class="f_bold">Telefon</span>
+                                            0731 500-58663
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <span class="round-ico round-ico_tuerkis round-ico_fax"></span>
+                                        <p>
+                                            <span class="f_bold">Telefax</span>
+                                            0731 500-58664
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <span class="round-ico round-ico_green round-ico_mail"></span>
+                                        <p>
+                                            <span class="f_bold">E-Mail</span>
+                                            <a href="#">endometriose.ufk@uniklinik-ulm.de</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-box">
+                                <p class="simple-inf">
+                                    <span class="f_medium">Sie erreichen uns telefonisch:</span>
+                                    Montag bis Donnerstag: 08:00 bis 12:30 Uhr und 13:00 bis 16:00 Uhr 
+                                    Freitag: 08:00 bis 14:00 Uhr
+                                </p>
+                                <p class="simple-inf">
+                                    <span class="f_medium">Sprechstundenzeiten:</span>
+                                    Dienstag: 08:00 bis 15:00 Uhr
+                                </p>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+													<div class="copytext">
+                            <p>
+                                In unserer Endometriosesprechstunde betreuen wir Patientinnen bei Verdacht auf Endometriose oder bei einer bestehenden Endometrioseerkrankung zur Beratung und weiteren Therapieplanung oder zur Einholung einer Zweitmeinung.
+                            </p>
+                            <p>
+                                Wir bieten eine umfassende Diagnostik mit hochauflösenden bildgebenden Verfahren sowie das komplette Spektrum der minimal-invasiven Operationen (konventionelle Bauchspiegelung (Laparoskopie), Da Vinci-Operationsroboter). Gemeinsam mit Ihnen erarbeiten wir vom Erstgespräch an ein individuelles Therapiekonzept, das Ihren Bedürfnissen und Wünschen entspricht.
+                            </p>
+                            <p>
+                                Für eine ganzheitliche Behandlung arbeiten wir bei Bedarf eng mit verschiedenen Fachdisziplinen des Universitätsklinikums zusammen (z.B. Kinderwunschzentrum, Radiologie, Urologie, Chirurgie). Die Vorteile dieser interdisziplinären Zusammenarbeit liegen auf der Hand: Die Betreuung erfolgt zentral in der Frauenklinik. Von dort koordinieren wir zeitnah die notwendigen Termine in anderen kooperierenden Abteilungen für Sie.
+                            </p>
+													</div>
+                        </div>
+                    </div>
+									</div>
+                </section>
+						</div>
+				</div>
+
+				<div class="row">
+						<div class="col-xs-12">
+								<section>
+										<div id="line-2">
+
+												<!-- Headline -->
+												<div class="row">
+													<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+															<h3 class="content-line__title content-line__title_m">
+									 								Das Team des Endometriosezentrums
+															</h3>
+						              </div>
+												</div>
+
+												<!-- Team -->
+												<div class="col-xs-12 col-md-8 col-md-offset-2">
+				                    <div class="row">
+				                        <div class="col-xs-12">
+				                            <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/klinik-endometriose-team-banner.jpg" alt="team" class="img-responsive">
+				                        </div>
+																<div class="col-xs-12">
+				                            <div class="wraper">
+				                                <div class="team team__aerzte" data-mh="group-1">
+				                                    <span class="round-ico"></span>
+				                                    <h4>
+				                                        Ärzte-Team
+				                                    </h4>
+				                                    <p>Dr. Peter Widschwendter <a href="#"><span class="team-ico"></span></a></p>
+				                                    <p>Prof. Dr. Katharina Hancke <a href="#"><span class="team-ico"></span></a></p>
+				                                    <p>Dr. Diego Hoffmeister <a href="#"><span class="team-ico"></span></a></p>
+				                                    <p>Dr. Emanuel Bauer <a href="#"><span class="team-ico"></span></a></p>
+				                                </div>
+				                                <div class="team team__pflege" data-mh="group-1">
+				                                    <span class="round-ico"></span>
+				                                    <h4>
+				                                        Pflege
+				                                    </h4>
+				                                    <p>Sabrina Heger</p>
+				                                    <p>Susanne Hengsteler</p>
+				                                    <p>Alexandra Kriebisch</p>
+				                                </div>
+				                            </div>
+				                        </div>
+				                    </div>
+												</div>
+
+										</div>
+								</section>
+            </div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<section>
+								<div id="line-3">
+
+										<!-- Headline -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+													<h3 class="content-line__title content-line__title_m">
+													    Symptomatik bei Endometriose
+													</h3>
+				              </div>
+										</div>
+
+										<!-- Bild-Text-Element mit anderer Spaltigkeit -->
+										<div class="row">
+				            	<div class="col-xs-12 col-md-10 col-md-offset-2">
+				                    <div class="row">
+				                        <div class="col-xs-12 col-md-8">
+				                            <div class="copytext">
+																			<p>
+				                                Die Symptome bei Endometriose sind sehr variabel in ihrer Form und in ihrer Intensität je nach Lokalisation und Ausdehnung der Endometriose. Aus diesem Grund wird eine Endometrioseerkrankung häufig erst spät erkannt und behandelt. Die Erkrankung ist zwar gutartig, verläuft aber oft chronisch und kann die Lebensqualität durch starke Schmerzen und unerfüllten Kinderwunsch beeinträchtigen. Ursache für die Symptome ist das Auftreten von Gebärmutterschleimhaut (Endometrium) außerhalb der Gebärmutter. Diese Endometrioseherde reagieren unter dem Einfluss weiblicher Geschlechtshormone und unterliegen damit dem typischen monatlichen Rhythmus. Während die aufgebaute Schleimhaut im Rahmen der Monatsblutung über die Scheide abfließen kann, verbleiben die kleinen Blutungen der Endometrioseherde im Bauch und können dort vor allem Schmerzen, aber auch Zysten und Verwachsungen verursachen.
+				                            	</p>
+																		</div>
+				                        </div>
+				                        <div class="col-xs-12 col-md-4">
+				                            <a href="#" data-toggle="modal" data-target="#photoModal" class="popup-btn">
+				                                <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/popup-image-btn-1.jpg" alt="popup" class="img-responsive">
+				                                <span class="zoom-icon"></span>
+				                            </a>
+				                            <div class="modal fade" id="photoModal" tabindex="-1" role="dialog">
+				                                <div class="modal-dialog">
+				                                    <div class="modal-content">
+				                                        <div class="modal-header">
+				                                            <button class="close" type="button" data-dismiss="modal">x</button>
+				                                        </div>
+				                                        <div class="modal-body">
+				                                            <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/popup-image-btn-1.jpg" alt="popup" class="zoomed-image">
+				                                        </div>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </div>
+				                    </div>
+				            		</div>
+										</div>
+
+										<!-- Kleine Überschrift mit Accordion -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2">
+												<h5 class="klinik-line__text-list-title">
+			                      Häufige Beschwerden
+			                  </h5>
+			                  <!-- Accordion -->
+			                  <div class="panel-group" id="klinik-accordion-1" role="tablist" aria-multiselectable="true">
+			                      <!-- Accordion Item -->
+			                      <div class="panel">
+			                          <div class="panel-heading" role="tab">
+			                              <div class="row">
+			                                  <div class="col-xs-12">
+			                                      <a class="accordion-btn collapsed"
+			                                          role="button"
+			                                          data-toggle="collapse"
+			                                          data-parent="#klinik-accordion-1"
+			                                          href="#klinik-accordion-collapse-1_1" aria-expanded="true"
+			                                          aria-controls="klinik-accordion-collapse-1_1">
+
+			                                          Schmerzen während der Monatsblutung
+			                                          <span class="dropdown-btn"></span>
+
+			                                      </a>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                          <div id="klinik-accordion-collapse-1_1" class="panel-collapse collapse" role="tabpanel">
+			                              <div class="panel-body">
+			                                  <div class="row">
+			                                      <div class="col-xs-12">
+			                                          <p>
+			                                              Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke.
+			                                          </p>
+			                                      </div>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                      </div>
+			                      <!-- /Accordion Item -->
+			                      <!-- Accordion Item -->
+			                      <div class="panel">
+			                          <div class="panel-heading" role="tab">
+			                              <div class="row">
+			                                  <div class="col-xs-12">
+			                                      <a class="accordion-btn collapsed"
+			                                          role="button"
+			                                          data-toggle="collapse"
+			                                          data-parent="#klinik-accordion-1"
+			                                          href="#klinik-accordion-collapse-1_2" aria-expanded="true"
+			                                          aria-controls="klinik-accordion-collapse-1_2">
+
+			                                          Blutungsstörungen
+			                                          <span class="dropdown-btn"></span>
+
+			                                      </a>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                          <div id="klinik-accordion-collapse-1_2" class="panel-collapse collapse" role="tabpanel">
+			                              <div class="panel-body">
+			                                  <div class="row">
+			                                      <div class="col-xs-12">
+			                                          <p>
+			                                              Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke.
+			                                          </p>
+			                                      </div>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                      </div>
+			                      <!-- /Accordion Item -->
+			                      <!-- Accordion Item -->
+			                      <div class="panel">
+			                          <div class="panel-heading" role="tab">
+			                              <div class="row">
+			                                  <div class="col-xs-12">
+			                                      <a class="accordion-btn collapsed"
+			                                          role="button"
+			                                          data-toggle="collapse"
+			                                          data-parent="#klinik-accordion-1"
+			                                          href="#klinik-accordion-collapse-1_3" aria-expanded="true"
+			                                          aria-controls="klinik-accordion-collapse-1_3">
+
+			                                          Kinderlosigkeit
+			                                          <span class="dropdown-btn"></span>
+
+			                                      </a>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                          <div id="klinik-accordion-collapse-1_3" class="panel-collapse collapse" role="tabpanel">
+			                              <div class="panel-body">
+			                                  <div class="row">
+			                                      <div class="col-xs-12">
+			                                          <p>
+			                                              Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke.
+			                                          </p>
+			                                      </div>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                      </div>
+			                      <!-- /Accordion Item -->
+			                      <!-- Accordion Item -->
+			                      <div class="panel">
+			                          <div class="panel-heading" role="tab">
+			                              <div class="row">
+			                                  <div class="col-xs-12">
+			                                      <a class="accordion-btn collapsed"
+			                                          role="button"
+			                                          data-toggle="collapse"
+			                                          data-parent="#klinik-accordion-1"
+			                                          href="#klinik-accordion-collapse-1_4" aria-expanded="true"
+			                                          aria-controls="klinik-accordion-collapse-1_4">
+
+			                                          Chronische Unterbauchschmerzen
+			                                          <span class="dropdown-btn"></span>
+
+			                                      </a>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                          <div id="klinik-accordion-collapse-1_4" class="panel-collapse collapse" role="tabpanel">
+			                              <div class="panel-body">
+			                                  <div class="row">
+			                                      <div class="col-xs-12">
+			                                          <p>
+			                                              Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke.
+			                                          </p>
+			                                      </div>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                      </div>
+			                      <!-- /Accordion Item -->
+			                      <!-- Accordion Item -->
+			                      <div class="panel">
+			                          <div class="panel-heading" role="tab">
+			                              <div class="row">
+			                                  <div class="col-xs-12">
+			                                      <a class="accordion-btn collapsed"
+			                                          role="button"
+			                                          data-toggle="collapse"
+			                                          data-parent="#klinik-accordion-1"
+			                                          href="#klinik-accordion-collapse-1_5" aria-expanded="true"
+			                                          aria-controls="klinik-accordion-collapse-1_5">
+
+			                                          Schmerzen beim Geschlechtsverkehr
+			                                          <span class="dropdown-btn"></span>
+
+			                                      </a>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                          <div id="klinik-accordion-collapse-1_5" class="panel-collapse collapse" role="tabpanel">
+			                              <div class="panel-body">
+			                                  <div class="row">
+			                                      <div class="col-xs-12">
+			                                          <p>
+			                                              Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke.
+			                                          </p>
+			                                      </div>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                      </div>
+			                      <!-- /Accordion Item -->
+			                      <!-- Accordion Item -->
+			                      <div class="panel">
+			                          <div class="panel-heading" role="tab">
+			                              <div class="row">
+			                                  <div class="col-xs-12">
+			                                      <a class="accordion-btn collapsed"
+			                                          role="button"
+			                                          data-toggle="collapse"
+			                                          data-parent="#klinik-accordion-1"
+			                                          href="#klinik-accordion-collapse-1_6" aria-expanded="true"
+			                                          aria-controls="klinik-accordion-collapse-1_6">
+
+			                                          Schmerzen beim Stuhlgang oder beim Wasserlassen
+			                                          <span class="dropdown-btn"></span>
+
+			                                      </a>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                          <div id="klinik-accordion-collapse-1_6" class="panel-collapse collapse" role="tabpanel">
+			                              <div class="panel-body">
+			                                  <div class="row">
+			                                      <div class="col-xs-12">
+			                                          <p>
+			                                              Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke.
+			                                          </p>
+			                                      </div>
+			                                  </div>
+			                              </div>
+			                          </div>
+			                      </div>
+			                      <!-- /Accordion Item -->
+			                  </div>
+			                  <!-- /Accordion -->
+											</div>
+										</div>
+
+								</div>
+						</section>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<section>
+								<div id="line-4">
+
+										<!-- Headline -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+													<h3 class="content-line__title content-line__title_m">
+								 							Diagnostik und Therapie
+													</h3>
+				              </div>
+										</div>
+
+										<!-- Bild-Text-Element mit anderer Spaltigkeit -->
+										<div class="row">
+				            	<div class="col-xs-12 col-md-10 col-md-offset-2">
+												<div class="row">
+		                        <div class="col-xs-12 col-md-4">
+		                            <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/endometriose-image-1.jpg" alt="popup" class="img-responsive side-image">
+		                        </div>
+		                        <div class="col-xs-12 col-md-8">
+		                            <div class="copytext">
+																	<h5>
+		                                Diagnostik bei Endometriose
+		                            	</h5>
+		                            	<p>
+		                                In unserem Endometriosezentrum bieten wir alle modernen diagnostischen Verfahren an, bei Bedarf in Kooperation mit anderen Fachdisziplinen des Universitätsklinikums. Das Aufnahmegespräch und die gynäkologische Untersuchung sind wichtige Bestandteile der Diagnostik und liefern erste Hinweise, ob eine Endometriose vorliegen könnte. Die Diagnose kann bei hinreichendem Verdacht auf eine Endometrioseerkrankung durch eine Bauchspiegelung (Laparoskopie) mit Gewebeentnahme und anschließender histologischer Untersuchung gesichert werden.
+		                            	</p>
+																</div>
+		                        </div>
+		                    </div>
+											</div>
+		                </div>
+
+										<!-- Accordion -->
+                    <div class="row">
+												<div class="col-xs-12 col-md-8 col-md-offset-2">
+                            <!-- Accordion -->
+                            <div class="panel-group" id="klinik-accordion-2" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-2" 
+                                                    href="#klinik-accordion-collapse-2_1" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-1_1">
+                                                    
+                                                    Ausführliches Gespräch mit Arzt/Ärztin
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-2_1" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-2" 
+                                                    href="#klinik-accordion-collapse-2_2" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-2_2">
+                                                    
+                                                    Gynäkologische Untersuchung 
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-2_2" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-2" 
+                                                    href="#klinik-accordion-collapse-2_3" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-2_3">
+                                                    
+                                                    Bildgebende Verfahren
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-2_3" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-2" 
+                                                    href="#klinik-accordion-collapse-2_4" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-2_4">
+                                                    
+                                                    Diagnostische Bauchspiegelung (Laparoskopie) 
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-2_4" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Mehr als 25 Prozent aller Frauen mit unerfülltem Kinderwunsch haben Endometriose in unterschiedlichen Stadien. Ursache ist meist die durch die Endometrioseherde hervorgerufene (nicht-bakterielle) Entzündung und Verklebung der weiblichen Geschlechtsorgane: Gebärmutter, Eileiter und Eierstöcke. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                            </div>
+                            <!-- /Accordion -->
+                        </div>
+                    </div>
+
+										<!-- Bild-Text-Element mit anderer Spaltigkeit -->
+										<div class="row">
+				            	<div class="col-xs-12 col-md-10 col-md-offset-2">
+												<div class="row">
+		                        <div class="col-xs-12 col-md-8">
+		                            <div class="copytext">
+																	<h5>
+		                                Therapie der Endometriose
+		                            	</h5>
+		                            	<p>
+		                                Die Therapie einer Endometrioseerkrankung beruht meist auf mehreren Säulen. Neben der chirurgischen Entfernung der Endometrioseherde mittels minimal-invasiver Operationen stellt die medikamentöse Therapie dieser hormonabhängigen Erkrankung eine wichtige Säule dar.  Nach ausführlicher Beratung und Untersuchung erstellen wir für jede Patientin ein individuelles Therapiekonzept, das ihren Bedürfnissen und Wünschen entspricht. Wichtige Faktoren sind dabei das Alter der Patientin, ihre Beschwerden, ein eventuell bestehender Kinderwunsch sowie der Schweregrad der Erkrankung.
+		                            	</p>
+																</div>
+		                        </div>
+		                        <div class="col-xs-12 col-md-4">
+		                            <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/endometriose-image-2.jpg" alt="popup" class="img-responsive side-image">
+		                        </div>
+		                    </div>
+											</div>
+		                </div>
+
+										<!-- Tabs -->
+										<div class="row">
+												<div class="col-xs-12 col-md-8 col-md-offset-2">
+														<div class="tab">
+																<ul class="b-tablist" role="tablist">
+		                                <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Medikamentöse Therapie</a></li><li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Operative Therapie</a></li><li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Kinderwunschbehandlung</a></li>
+		                            </ul>
+		                            <div class="tab-content">
+		                                <div class="tab-pane active" role="tabpanel" id="tab1">
+		                                    <p>Medikamentöse Therapie: Zur Linderung Ihrer Beschwerden wird die hormonelle Regulation des Zyklus mithilfe einer „Pille“ und die oft gleichzeitig notwendige Schmerztherapie für Sie maßgeschneidert.</p>
+		                                </div>
+		                                <div class="tab-pane" role="tabpanel" id="tab2">
+		                                    <p>Operative Therapie: Zur Linderung Ihrer Beschwerden wird die hormonelle Regulation des Zyklus mithilfe einer „Pille“ und die oft gleichzeitig notwendige Schmerztherapie für Sie maßgeschneidert.</p>
+		                                </div>
+		                                <div class="tab-pane" role="tabpanel" id="tab3">
+		                                    <p>Kinderwunschbehandlung: Zur Linderung Ihrer Beschwerden wird die hormonelle Regulation des Zyklus mithilfe einer „Pille“ und die oft gleichzeitig notwendige Schmerztherapie für Sie maßgeschneidert.</p>
+		                                </div>
+		                            </div>
+														</div>
+												</div>
+										</div>
+
+								</div>
+            </section>
+        	</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<section>
+								<div id="line-5">
+
+										<!-- Headline -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+													<h3 class="content-line__title content-line__title_m">
+															Patienteninformationen
+													</h3>
+				              </div>
+										</div>
+
+										<!-- Accordion mit Hintergrund -->
+                    <div class="row block-bg">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                            <!-- Accordion -->
+                            <div class="panel-group multicolored" id="klinik-accordion-3" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-3" 
+                                                    href="#klinik-accordion-collapse-3_1" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-3_1">
+                                                    
+                                                    Was ist Endometriose?
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-3_1" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Die exakte Ursache der Endometriose ist trotz intensiver Forschung weiterhin unklar. Eine Theorie besagt, dass im Rahmen der Monatsblutung einzelne Zellen über die Eileiter „rückwärts" in den Bauchraum gelangen und dort im Bauchfell oder an Organen des Beckens anwachsen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-3" 
+                                                    href="#klinik-accordion-collapse-3_2" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-3_2">
+                                                    
+                                                    Wo kann Endometriose auftreten?
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-3_2" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Die exakte Ursache der Endometriose ist trotz intensiver Forschung weiterhin unklar. Eine Theorie besagt, dass im Rahmen der Monatsblutung einzelne Zellen über die Eileiter „rückwärts" in den Bauchraum gelangen und dort im Bauchfell oder an Organen des Beckens anwachsen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-2" 
+                                                    href="#klinik-accordion-collapse-3_3" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-3_3">
+                                                    
+                                                    Wie entsteht Endometriose?
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-3_3" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Die exakte Ursache der Endometriose ist trotz intensiver Forschung weiterhin unklar. Eine Theorie besagt, dass im Rahmen der Monatsblutung einzelne Zellen über die Eileiter „rückwärts" in den Bauchraum gelangen und dort im Bauchfell oder an Organen des Beckens anwachsen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-3" 
+                                                    href="#klinik-accordion-collapse-3_4" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-3_4">
+                                                    
+                                                    Ist Endometriose vererbbar?
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-3_4" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Die exakte Ursache der Endometriose ist trotz intensiver Forschung weiterhin unklar. Eine Theorie besagt, dass im Rahmen der Monatsblutung einzelne Zellen über die Eileiter „rückwärts" in den Bauchraum gelangen und dort im Bauchfell oder an Organen des Beckens anwachsen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-3" 
+                                                    href="#klinik-accordion-collapse-3_5" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-3_5">
+                                                    
+                                                    Kann ich jetzt nicht mehr schwanger werden?
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-3_5" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Die exakte Ursache der Endometriose ist trotz intensiver Forschung weiterhin unklar. Eine Theorie besagt, dass im Rahmen der Monatsblutung einzelne Zellen über die Eileiter „rückwärts" in den Bauchraum gelangen und dort im Bauchfell oder an Organen des Beckens anwachsen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                                <!-- Accordion Item -->
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a class="accordion-btn collapsed" 
+                                                    role="button" 
+                                                    data-toggle="collapse" 
+                                                    data-parent="#klinik-accordion-3" 
+                                                    href="#klinik-accordion-collapse-3_6" aria-expanded="true"
+                                                    aria-controls="klinik-accordion-collapse-3_6">
+                                                    
+                                                    Ist in jedem Fall eine Bauchspiegelung notwendig?
+                                                    <span class="dropdown-btn"></span>
+                
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="klinik-accordion-collapse-3_6" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p>
+                                                        Die exakte Ursache der Endometriose ist trotz intensiver Forschung weiterhin unklar. Eine Theorie besagt, dass im Rahmen der Monatsblutung einzelne Zellen über die Eileiter „rückwärts" in den Bauchraum gelangen und dort im Bauchfell oder an Organen des Beckens anwachsen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Accordion Item -->
+                            </div>
+                            <!-- /Accordion -->
+                        </div> 
+                    </div>
+
+										<!-- Text -->
+										<div class="row block-bg">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+														<div class="copytext">
+																<h5>
+		                                Weiterführende Informationen
+		                            </h5>
+		                            <p>
+		                                Noch detailliertere Informationen finden Sie auf einigen empfehlenswerten Websites:
+		                            </p>
+		                            <h6>
+		                                SEF - Stiftung Endometriose-Forschung
+		                            </h6>
+		                            <p>
+																	<a href="#">
+		                                www.endometriose-sef.de
+		                            	</a>
+																</p>
+		                            <h6>
+		                                EEL - Europäische Endometriose Liga (Informationsportal)
+		                            </h6>
+																<p>
+			                            <a href="#">
+			                                www.endometriose-liga.eu
+			                            </a>
+																</p>
+		                            <h6>
+		                                Endometriose-Vereinigung Deutschland e.V. (Selbsthilfe-Organisation)
+		                            </h6>
+																<p>
+			                            <a href="#">
+			                                www.endometriose-vereinigung.de
+			                            </a>
+																</p>
+																<h6>
+		                                AWMF-Leitlinie Endometriose: Diagnostik und Therapie
+		                            </h6>
+																<p>
+			                            <a href="#">
+			                                www.awmf.org
+			                            </a>
+		                            </p>
+																<h6>
+		                                Ernährungsberatung
+		                            </h6>
+		                            <p>
+		                                Ein Team aus freiberuflich tätigen Ernährungsexperten aus der Region hat sich zu einem Netzwerk zusammengeschlossen. Das Angebot des regionalen "Netzwerk Ernährung" umfasst vielfältige Dienstleistungen zum Thema Ernährung (z.B. Einzel- und Gruppenberatung, Kochkurse, Seminare, Vorträge). Unter folgendem Link finden Sie weitere Informationen sowie die Kontaktdaten der Ernährungsexperten:
+		                                <a href="#" class="">
+		                                    www.ernaehrungsnetz.net
+		                                </a>
+		                            </p>
+		                            <h6>
+		                                Rehazentren Endometriose
+		                            </h6>
+		                            <p>
+		                                <a href="#" class="">
+		                                    www.endometriose-sef.de
+		                                </a>
+		                                (siehe Patienteninformationen » Rehabilitation)
+		                            </p>
+														</div>
+												</div>
+										</div>
+
+								</div>
+            </section>
+          </div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<section>
+								<div id="line-6">
+
+										<!-- Headline -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+													<h3 class="content-line__title content-line__title_m">
+							 								Ausgezeichnete Qualität
+													</h3>
+				              </div>
+										</div>
+
+										<!-- Text -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2">
+												<div class="copytext">
+														<p>
+                                Unser Zentrum ist seit November 2014 durch die Stiftung Endometriose Forschung (SEF) als klinisches Endometriosezentrum (Stufe II) zertifiziert. Die Auszeichnung belegt ein hohes Maß an Qualität in der Diagnostik und Therapie der Endometriose.
+                            </p>
+												</div>
+												<div class="row">
+													<div class="col-xs-12 text-center">
+	                            <div class="b-certificate">
+	                                <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/sertificate-1.jpg" alt="certificate">
+	                            </div>
+	                            <div class="b-certificate">
+	                                <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/sertificate-2.jpg" alt="certificate">
+	                            </div>
+	                        </div>
+												</div>
+											</div>
+										</div>
+
+								</div>
+            </section>
+          </div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<section>
+								<div id="line-7">
+
+										<!-- Headline -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+													<h3 class="content-line__title content-line__title_m">
+															Impressionen aus der Klinik
+													</h3>
+				              </div>
+										</div>
+
+										<!-- Bildergalerie -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2">
+												<div class="content-slider">
+                          <div id="carousel" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carousel" data-slide-to="1"></li>
+                                  <li data-target="#carousel" data-slide-to="2"></li>
+                              </ol>
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="item active">
+                                      <div class="slide">
+                                          <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/slider-2-slide.jpg" alt="slide">
+                                      </div>
+                                      <p>
+                                          <span class="slider-indicator">1 / 3</span> <span class="separator">|</span>
+                                          Schonende Untersuchung per Ultraschall: nach einem Gespräch mit dem Arzt ist Ultraschall meist das erste diagnostische Verfahren, ehe womöglich zur genaueren Abklärung invasive Verfahren Anwendung finden.
+                                          <span class="photo-author">Foto: M. Hansen</span>
+                                      </p>
+                                  </div>
+                                  <div class="item">
+                                      <div class="slide">
+                                          <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/slider-2-slide.jpg" alt="slide">
+                                      </div>
+                                      <p>
+                                          <span class="slider-indicator">2 / 3</span> <span class="separator">|</span>
+                                          Schonende Untersuchung per Ultraschall: nach einem Gespräch mit dem Arzt ist Ultraschall meist das erste diagnostische Verfahren, ehe womöglich zur genaueren Abklärung invasive Verfahren Anwendung finden.
+                                          <span class="photo-author">Foto: M. Hansen</span>
+                                      </p>
+                                  </div>
+                                  <div class="item">
+                                      <div class="slide">
+                                          <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/slider-2-slide.jpg" alt="slide">
+                                      </div>
+                                      <p>
+                                          <span class="slider-indicator">3 / 3</span> <span class="separator">|</span>
+                                          Schonende Untersuchung per Ultraschall: nach einem Gespräch mit dem Arzt ist Ultraschall meist das erste diagnostische Verfahren, ehe womöglich zur genaueren Abklärung invasive Verfahren Anwendung finden.
+                                          <span class="photo-author">Foto: M. Hansen</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+																	<span class="slider-arr prev"></span>
+                              </a>
+                              <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+																	<span class="slider-arr next"></span>
+                              </a>
+                          </div>
+                      	</div>
+											</div>
+                    </div>
+
+								</div>
+            </section>
+          </div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<section>
+								<div id="line-8">
+
+										<!-- Headline -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+													<h3 class="content-line__title content-line__title_m">
+															Downloads
+													</h3>
+				              </div>
+										</div>
+
+										<!-- Liste von Dateien -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2">
+													<div class="download-item">
+                              <a href="#">Endometriose: Häufige Fragen (PDF, 340 KB)</a>
+                          </div>
+                          <div class="download-item">
+                              <a href="#">Qualitätsbericht 2016 (PDF, 612 KB)</a>
+                          </div>
+                          <div class="download-item">
+                              <a href="#">Patientenbroschüre Kinderwunschzentrum (PDF, 4.250 KB)</a>
+                          </div>
+											</div>
+										</div>
+
+								</div>
+            </section>
+          </div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<section>
+								<div id="line-9">
+
+										<!-- Headline -->
+										<div class="row">
+											<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+													<h3 class="content-line__title content-line__title_m">
+															Weitere Themen
+													</h3>
+				              </div>
+										</div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+													<div class="content-slider">
+														<span class="slider-arr prev"></span>
+                						<span class="slider-arr next"></span>
+                            <div class="slides">
+                                <div class="slide">
+																		<div class="box" data-mh="group-3">
+									                    <div class="b-text" data-mh="group-3_1">
+									                        <h2>
+									                            <span class="f_medium">Auditive Verarbeitungsstörungen </span>
+									                            Von den Fallstricken der Diagnostik zu den Grenzen der Therapie
+									                        </h2>
+									                    </div>
+									                    <div class="box__b-photo">
+									                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/education-item-thumbnail-1.jpg" alt="thumbnail">
+									                    </div>
+																			<a href="#" class="box__link box__more-link">mehr erfahren</a>
+																		</div>
+                                </div>
+                                <div class="slide">
+																		<div class="box box_blue_zwei" data-mh="group-3">
+									                    <div class="b-text" data-mh="group-3_1">
+									                        <h2>
+									                            <span class="f_medium">Auditive Verarbeitungsstörungen </span>
+									                            Von den Fallstricken der Diagnostik zu den Grenzen der Therapie
+									                        </h2>
+									                    </div>
+									                    <div class="box__b-photo">
+									                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/education-item-thumbnail-2.jpg" alt="thumbnail">
+									                    </div>
+																			<a href="#" class="box__link">mehr erfahren</a>
+																		</div>
+                                </div>
+                                <div class="slide">
+																		<div class="box box_tuerkis" data-mh="group-3">
+									                    <div class="b-text" data-mh="group-3_1">
+									                        <h2>
+									                            <span class="f_medium">Auditive Verarbeitungsstörungen </span>
+									                            Von den Fallstricken der Diagnostik zu den Grenzen der Therapie
+									                        </h2>
+									                    </div>
+									                    <div class="box__b-photo">
+									                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/education-item-thumbnail-2.jpg" alt="thumbnail">
+									                    </div>
+																			<a href="#" class="box__link">mehr erfahren</a>
+																		</div>
+                                </div>
+																<div class="slide">
+																		<div class="box" data-mh="group-3">
+									                    <div class="b-text" data-mh="group-3_1">
+									                        <h2>
+									                            <span class="f_medium">Auditive Verarbeitungsstörungen </span>
+									                            Von den Fallstricken der Diagnostik zu den Grenzen der Therapie
+									                        </h2>
+									                    </div>
+									                    <div class="box__b-photo">
+									                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/education-item-thumbnail-1.jpg" alt="thumbnail">
+									                    </div>
+																			<a href="#" class="box__link box__more-link">mehr erfahren</a>
+																		</div>
+                                </div>
+                                <div class="slide">
+																		<div class="box box_blue_zwei" data-mh="group-3">
+									                    <div class="b-text" data-mh="group-3_1">
+									                        <h2>
+									                            <span class="f_medium">Auditive Verarbeitungsstörungen </span>
+									                            Von den Fallstricken der Diagnostik zu den Grenzen der Therapie
+									                        </h2>
+									                    </div>
+									                    <div class="box__b-photo">
+									                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/education-item-thumbnail-2.jpg" alt="thumbnail">
+									                    </div>
+																			<a href="#" class="box__link">mehr erfahren</a>
+																		</div>
+                                </div>
+                                <div class="slide">
+																		<div class="box box_tuerkis" data-mh="group-3">
+									                    <div class="b-text" data-mh="group-3_1">
+									                        <h2>
+									                            <span class="f_medium">Auditive Verarbeitungsstörungen </span>
+									                            Von den Fallstricken der Diagnostik zu den Grenzen der Therapie
+									                        </h2>
+									                    </div>
+									                    <div class="box__b-photo">
+									                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/education-item-thumbnail-2.jpg" alt="thumbnail">
+									                    </div>
+																			<a href="#" class="box__link">mehr erfahren</a>
+																		</div>
+                                </div>
+                            </div>
+													</div>
+                        </div>
+                    </div>
+
+								</div>
+            </section>
+          </div>
+				</div>
+		</div>
+
+
+    <section>
+			<div class="map">
+        <div id='map'>
+        </div>
+        <div class="b-info hidden-xs hidden-sm">
+            <h4 class="title title_b">
+                Universitätsfrauenklinik
+            </h4>
+            <p>
+                Prittwitzstr. 43 <br>
+                D-89075 Ulm
+            </p>
+            <h4 class="title">
+                Kreißsaal
+            </h4>
+            <p>
+                Tel. 0731-500 58630
+            </p>
+            <h4 class="title">
+                Ambulanz
+            </h4>
+            <p>
+                Tel. 0731-500 58688
+            </p>
+            <h4 class="title">
+                Klinikleitung
+            </h4>
+            <p>
+                Tel. 0731-500 58500
+            </p>
+            <h4 class="title">
+                E-Mail
+            </h4>
+            <p>
+                info.frauenklinik@uniklinik-ulm.de
+            </p>
+            <a href="#" class="more-link">
+                Anfahrt planen
+            </a>
+        </div>
+    	</div>
+    </section>
+
+		<footer class="footer">
+      <div class="footer__nav">
+          <div class="container">
+              <div class="row">
+                  <div class="hidden-xs col-sm-3 col-md-2 footer__logo">
+                      <a href="#">
+                          <img src="typo3conf/ext/as_template/Resources/Public/Images/logo.png" alt="logo" class="img-responsive">
+                      </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-10">
+                      <div class="row">
+                          <div class="col-xs-12 col-md-9">
+                              <div class="wraper">
+                                  <ul class="footer__nav-links">
+																			<li><a href="#">Impressum</a></li><li><a href="#">Sitemap</a></li><li><a href="#">Kontakt</a></li><li><a href="#">Anreise</a></li><li><a href="#">Lageplan</a></li><li><a href="#">Presse</a></li><li><a href="#">Stellenangebote</a></li><li><a href="#">Ihre Meinung</a></li><li class="social hidden-xs"><a href="#" class="fb"></a></li><li class="social hidden-xs"><a href="#" class="tw"></a></li><li class="social hidden-xs"><a href="#" class="yt"></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hidden-xs col-sm-12 col-md-3 text-right">
+                              <div class="wraper">
+                                  <ul class="footer__nav-links">
+                                      <li><a href="#" class="up">Seitenanfang <span class="ico"></span></a></li>
+                                      <li><a href="#" class="print">Drucken <span class="ico"></span></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer__links-list">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-2 white-bg-column">
+                      <h4>
+                          Universitätsklinikum Ulm
+                      </h4>
+                      <p>89070 Ulm</p>
+                      <p>Telefon: 0731/500-0</p>
+                      <p>Telefax: 0731/500-43002</p>
+                      <p>E-Mail: info@uniklinik-ulm.de</p>
+                      <div class="scheme hidden-xs">
+                          <p>Lagepläne</p>
+                          <img src="typo3conf/ext/as_template/Resources/Public/Images/scheme.jpg" alt="scheme" class="img-responsive">
+                      </div>
+                      <ul class="socials-black-list hidden-sm hidden-md hidden-lg">
+                          <li><a href="#" class="fb"></a></li>
+                          <li><a href="#" class="tw"></a></li>
+                          <li><a href="#" class="yt"></a></li>
+                      </ul>
+                  </div>
+                  <div class="hidden-xs col-sm-9 col-md-10">
+                      <div class="row">
+                          <div class="col-xs-6 col-md-2 col-custom-width">
+                              <h4>Patienten & Besucher</h4>
+                              <ul>
+                                  <li><a href="#">Experten finden</a></li>
+                                  <li><a href="#">Ihren Aufenthalt planen</a></li>
+                                  <li><a href="#">Anreisen & Parken</a></li>
+                                  <li><a href="#">Besuch bekommen</a></li>
+                                  <li><a href="#">Hygiene im Klinikum</a></li>
+                                  <li><a href="#">Nach Ihrem Aufenthalt</a></li>
+                                  <li><a href="#">Einkaufen & Services</a></li>
+                                  <li><a href="#">An klinischen Studien teilnehmen</a></li>
+                                  <li><a href="#">Veranstaltungen & Termine</a></li>
+                                  <li><a href="#">Mediathek</a></li>
+                                  <li><a href="#">Lob und Tadel</a></li>
+                                  <li><a href="#">Häufige Fragen</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-xs-6 col-md-2 col-custom-width">
+                              <h4>Kliniken & Zentren</h4>
+                              <ul>
+                                  <li><a href="#">Über uns</a></li>
+                                  <li><a href="#">Sprechstunden / Ambulanzen</a></li>
+                                  <li><a href="#">Infos zum Klinikaufenthalt</a></li>
+                                  <li><a href="#">Infos für Ärzte</a></li>
+                                  <li><a href="#">Forschung/Klinische Studien</a></li>
+                                  <li><a href="#">Lehre</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-xs-6 col-md-2 col-custom-width">
+                              <h4>Forschung</h4>
+                              <ul>
+                                  <li><a href="#">Forschungsschwerpunkte</a></li>
+                                  <li><a href="#">Aktuelle klinische Studien am Uniklinikum</a></li>
+                                  <li><a href="#">Medizinische Fakultät</a></li>
+                                  <li><a href="#">Ansprechpartner</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-xs-6 col-md-2 col-custom-width">
+                              <h4>Ausbildung & Karriere</h4>
+                              <ul>
+                                  <li><a href="#">Berufsgruppen</a></li>
+                                  <li><a href="#">Arbeiten am Uniklinikum Ulm</a></li>
+                                  <li><a href="#">Stellenmarkt / Jetzt bewerben</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-xs-6 col-md-2 col-custom-width">
+                              <h4>Über uns</h4>
+                              <ul>
+                                  <li><a href="#">Zahlen & Fakten</a></li>
+                                  <li><a href="#">Leitbild</a></li>
+                                  <li><a href="#">Management</a></li>
+                                  <li><a href="#">Zentrale Einrichtungen</a></li>
+                                  <li><a href="#">Pflege am UKU</a></li>
+                                  <li><a href="#">Dienstleistungsgesellschaft Universitätsklinikum Ulm mbH</a></li>
+                                  <li><a href="#">Universitätsgesellschaft</a></li>
+                                  <li><a href="#">Universitätsstiftung</a></li>
+                                  <li><a href="#">Veranstaltungen & Termine</a></li>
+                                  <li><a href="#">Aktuelles & Publikationen</a></li>
+                                  <li><a href="#">Soziale Verantwortung</a></li>
+                                  <li><a href="#">International</a></li>
+                                  <li><a href="#">Kooperierende Einrichtungen</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  	</footer>
+    <a href="#header" class="scroll-top-btn"></a>
+
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/Libs/jquery.js"></script>
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/Libs/bootstrap.js"></script>
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/Libs/jquery.matchHeight-min.js"></script>
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/Libs/slick.js"></script>
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/functions.js"></script>
+    <script>
+        $('#affixList').affix({
+            offset: {
+                top: 680,
+                bottom: function () {
+                    return (this.bottom = $('.content-slider').outerHeight(true));
+                }
+            }
+        });
+    </script>
+    <script>
+        $('.content-slider .slides').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            autoplay: true,
+            autiplaySpeed: 4000,
+            prevArrow: $('.content-slider .prev'),
+            nextArrow: $('.content-slider .next'),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <script> 
+        google.maps.event.addDomListener(window, 'load', init);
+        var map, markersArray = [];
+
+        function bindInfoWindow(marker, map, location) {
+            google.maps.event.addListener(marker, 'click', function() {
+                function close(location) {
+                    location.ib.close();
+                    location.infoWindowVisible = false;
+                    location.ib = null;
+                }
+
+                if (location.infoWindowVisible === true) {
+                    close(location);
+                } else {
+                    markersArray.forEach(function(loc, index){
+                        if (loc.ib && loc.ib !== null) {
+                            close(loc);
+                        }
+                    });
+
+                    var boxText = document.createElement('div');
+                    boxText.style.cssText = 'background: #fff;';
+                    boxText.classList.add('md-whiteframe-2dp');
+
+                    function buildPieces(location, el, part, icon) {
+                        if (location[part] === '') {
+                            return '';
+                        } else if (location.iw[part]) {
+                            switch(el){
+                                case 'photo':
+                                    if (location.photo){
+                                        return '<div class="iw-photo" style="background-image: url(' + location.photo + ');"></div>';
+                                    } else {
+                                        return '';
+                                    }
+                                    break;
+                                case 'iw-toolbar':
+                                    return '<div class="iw-toolbar"><h3 class="md-subhead">' + location.title + '</h3></div>';
+                                    break;
+                                case 'div':
+                                    switch(part){
+                                        case 'email':
+                                            return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="mailto:' + location.email + '" target="_blank">' + location.email + '</a></span></div>';
+                                            break;
+                                        case 'web':
+                                            return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="' + location.web + '" target="_blank">' + location.web_formatted + '</a></span></div>';
+                                            break;
+                                        case 'desc':
+                                            return '<label class="iw-desc" for="cb_details"><input type="checkbox" id="cb_details"/><h3 class="iw-x-details">Details</h3><i class="material-icons toggle-open-details"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><p class="iw-x-details">' + location.desc + '</p></label>';
+                                            break;
+                                        default:
+                                            return '<div class="iw-details"><i class="material-icons"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span>' + location[part] + '</span></div>';
+                                        break;
+                                    }
+                                    break;
+                                case 'open_hours':
+                                    var items = '';
+                                    if (location.open_hours.length > 0){
+                                        for (var i = 0; i < location.open_hours.length; ++i) {
+                                            if (i !== 0){
+                                                items += '<li><strong>' + location.open_hours[i].day + '</strong><strong>' + location.open_hours[i].hours +'</strong></li>';
+                                            }
+                                            var first = '<li><label for="cb_hours"><input type="checkbox" id="cb_hours"/><strong>' + location.open_hours[0].day + '</strong><strong>' + location.open_hours[0].hours +'</strong><i class="material-icons toggle-open-hours"><img src="//cdn.mapkit.io/v1/icons/keyboard_arrow_down.svg"/></i><ul>' + items + '</ul></label></li>';
+                                        }
+                                        return '<div class="iw-list"><i class="material-icons first-material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><ul>' + first + '</ul></div>';
+                                    } else {
+                                        return '';
+                                    }
+                                    break;
+                            }
+                        } else {
+                            return '';
+                        }
+                    }
+
+                    boxText.innerHTML = 
+                        buildPieces(location, 'photo', 'photo', '') +
+                        buildPieces(location, 'iw-toolbar', 'title', '') +
+                        buildPieces(location, 'div', 'address', 'location_on') +
+                        buildPieces(location, 'div', 'web', 'public') +
+                        buildPieces(location, 'div', 'email', 'email') +
+                        buildPieces(location, 'div', 'tel', 'phone') +
+                        buildPieces(location, 'div', 'int_tel', 'phone') +
+                        buildPieces(location, 'open_hours', 'open_hours', 'access_time') +
+                        buildPieces(location, 'div', 'desc', 'keyboard_arrow_down');
+
+                    var myOptions = {
+                        alignBottom: true,
+                        content: boxText,
+                        disableAutoPan: true,
+                        maxWidth: 0,
+                        pixelOffset: new google.maps.Size(-140, -40),
+                        zIndex: null,
+                        boxStyle: {
+                            opacity: 1,
+                            width: '280px'
+                        },
+                        closeBoxMargin: '0px 0px 0px 0px',
+                        infoBoxClearance: new google.maps.Size(1, 1),
+                        isHidden: false,
+                        pane: 'floatPane',
+                        enableEventPropagation: false
+                    };
+
+                    location.ib = new InfoBox(myOptions);
+                    location.ib.open(map, marker);
+                    location.infoWindowVisible = true;
+                }
+            });
+        }
+
+        function init() {
+            var mapOptions = {
+                center: new google.maps.LatLng(47.353185548422026,8.522580286572348),
+                zoom: 14,
+                gestureHandling: 'auto',
+                fullscreenControl: false,
+                zoomControl: false,
+                disableDoubleClickZoom: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                scrollwheel: false,
+                streetViewControl: false,
+                draggable : false,
+                clickableIcons: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: []
+            }
+            var mapElement = document.getElementById('map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var locations = [
+                {"title":"Hochschule Ulm","address":"Prittwitzstraße 10, 89075 Ulm, Германия","desc":"","tel":"","int_tel":"","email":"","web":"","web_formatted":"","open":"","time":"","lat":48.409,"lng":9.997426000000019,"open_hours":"","iw":{"address":true,"desc":true,"email":true,"enable":false,"int_tel":true,"open":true,"open_hours":true,"photo":true,"tel":true,"title":true,"web":true}}
+            ];
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    icon: locations[i].marker,
+                    position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                    map: map,
+                    title: locations[i].title,
+                    address: locations[i].address,
+                    desc: locations[i].desc,
+                    tel: locations[i].tel,
+                    int_tel: locations[i].int_tel,
+                    vicinity: locations[i].vicinity,
+                    open: locations[i].open,
+                    open_hours: locations[i].open_hours,
+                    photo: locations[i].photo,
+                    time: locations[i].time,
+                    email: locations[i].email,
+                    web: locations[i].web,
+                    iw: locations[i].iw
+                });
+                markersArray.push(marker);
+
+                if (locations[i].iw.enable === true){
+                    bindInfoWindow(marker, map, locations[i]);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

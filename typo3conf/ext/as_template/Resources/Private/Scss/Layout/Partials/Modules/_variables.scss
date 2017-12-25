@@ -1,0 +1,32 @@
+// Colors
+$white: #fff;
+$white_trans_80: rgba(255, 255, 255, 0.8);
+$white_trans_50: rgba(255, 255, 255, 0.5);
+$black: #000;
+$black_trans_25: rgba(0, 0, 0, 0.25);
+
+$grey: #434f55;
+$grey_50: #a1a7aa;
+$grey_40: #b4b9bb;
+$grey_30: #c6cacc;
+$grey_20: #d9dcdd;
+$grey_10: #ecedee;
+$grey_5: #f5f6f6;
+
+$blue: #009dca;
+$blue_20: #ccebf4;
+$blue_trans_80: rgba(0, 157, 202, .8);
+
+$green: #619f31;
+$green_20: #dfecd6;
+$green_trans_80: rgba(97, 160, 50, .8);
+
+$tuerkis: #379f95;
+$tuerkis_20: #d7ecea;
+
+$blue_zwei: #129fb8;
+$blue_zwei_20: #d0ecf1;
+
+// Gradients
+$gradient_green_blue: linear-gradient(90deg, $blue, $green);
+$gradient_green_blue_45deg: linear-gradient(45deg, $blue, $green);

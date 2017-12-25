@@ -1,0 +1,41 @@
+.contact-item {
+  padding: 30px 20px;
+	margin-bottom: 60px;
+  background-color: $grey_5;
+  position: relative;
+  text-align: left;
+
+	font-family: 'DaxlinePro-Light';
+  font-size: 24px;
+  color: $grey;
+
+  h4 {
+    font-family: 'DaxlinePro-Medium';
+    font-size: 24px;
+    line-height: 30px;
+    color: $grey;
+		margin: 0 0 1em;
+  }
+  p {
+		margin: 0 0 1em;
+		line-height: 36px;
+  }
+  .contact-item__more-link {
+    font-family: 'DaxlinePro-Medium';
+    font-size: 21px;
+    color: $grey;
+    text-decoration: none;
+    .arr {
+      display: inline-block;
+      width: 10px;
+      height: 17px;
+      margin-left: 5px;
+      background-image: url(../Images/contact-item-more-link-arr.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      top: 1px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,1454 @@
+@media (min-width: 0px) and (max-width: 320px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  .scroll-top-btn {
+    left: calc(50% - 30px);
+  }
+  .slider {
+    margin-top: 10px;
+    .slider__wraper .slider__item {
+      width: 100vw;
+      .slide {
+        width: 100%;
+        position: relative;
+        img {
+          height: 100%;
+          width: auto;
+        }
+        &:after {
+          display: none;
+        }
+        .text-block {
+          display: block;
+          width: 80%;
+          opacity: 1;
+          right: auto;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    .dots {
+      right: 40%;
+    }
+    &.slider-2 #carousel {
+      .carousel-control {
+        &.left {
+          height: 185px;
+          left: 15px;
+        }
+        &.right {
+          height: 185px;
+          left: calc(100% - 60px);
+        }
+      }
+      .carousel-indicators {
+        bottom: auto;
+        top: 200px;
+      }
+      .carousel-inner .item .slide {
+        height: 185px;
+      }
+    }
+  }
+  .content-line__title {
+    font-size: 23px;
+  }
+  .content-line {
+    .box {
+      .box__b-photo {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .box__b-bg {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .header {
+    padding-top: 10px;
+    padding-bottom: 0;
+    .header__top-nav {
+      li {
+        #searchFieldMobile {
+          right: 0;
+          width: 300px;
+          input[type="text"] {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .header__main-nav {
+      display: none;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      z-index: 99999;
+      background-color: #445055;
+      width: 100%;
+      min-width: 320px;
+      .container, .row, .unrelative-position {
+        padding: 0;
+        margin: 0;
+      }
+      .menu-items {
+        display: block;
+        padding-top: 40px;
+        li {
+          border-top: 2px solid rgba(255, 255, 255, 0.2);
+          padding: 10px 0;
+          position: relative;
+          width: 100%;
+          &:last-child {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+          }
+          a {
+            border: none;
+            color: #fff;
+          }
+          &:after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-left: 2px solid rgba(255, 255, 255, 0.2);
+            position: absolute;
+            right: 0;
+            top: 5px;
+            background-image: url(../Images/dropdown_btn.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          &:hover {
+            background-color: #009dca;
+          }
+          &.open {
+            background-color: #009dca;
+            .submenu-list {
+              display: block;
+            }
+            &:after {
+              border-left: none;
+              border-right: 2px solid rgba(255, 255, 255, 0.2);
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .content-line {
+    .box h2 {
+      width: 100%;
+      font-size: 22px;
+      line-height: 24px;
+    }
+    .family {
+      .family__b-text {
+        h2 {
+          font-size: 14px;
+          line-height: 16px;
+        }
+        .find_expert {
+          height: 20px;
+          font-size: 14px;
+          line-height: 20px;
+          width: 100px;
+          &:after {
+            height: 20px;
+            width: 10px;
+            right: -10px;
+            border: 10px solid #fff;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            border-right: none;
+          }
+        }
+      }
+    }
+    .panel-news {
+      .accordion-header {
+        height: auto;
+        h2 {
+          font-size: 14px;
+          float: none;
+        }
+        a {
+          font-size: 14px;
+          float: left;
+          left: 0;
+        }
+      }
+      .date-btn, .accordion-btn {
+        font-size: 16px;
+      }
+    }
+  }
+  .footer {
+    .footer__nav-links {
+      padding: 10px 0;
+    }
+    .footer__links-list {
+      text-align: center;
+      .white-bg-column:after {
+        display: none;
+      }
+    }
+  }
+  .breadcrumbs {
+    margin-top: 15px;
+    ol.breadcrumb li {
+      display: none;
+      &:last-child, &:first-child {
+        display: inline-block;
+      }
+    }
+  }
+  .banner {
+    position: relative;
+    height: 180px;
+    img {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: auto;
+      max-width: 200%;
+    }
+    .banner__b-info {
+      background-color: transparent;
+    }
+    .banner__b-info__right h4 {
+      font-size: 14px;
+      font-family: 'DaxlinePro-Medium';
+      color: #009dca;
+      top: 0;
+    }
+  }
+  .aside-nav__list {
+    display: none;
+    li {
+      text-align: center;
+      background-color: #f5f6f6;
+    }
+  }
+  .klinik-blocks__block-list li a {
+    font-size: 16px;
+  }
+  .klinik-news {
+    .news-item {
+      text-align: left;
+    }
+    .news-item__date {
+      width: 51px;
+      height: 51px;
+      font-size: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-top: 0;
+      span {
+        font-size: 21px;
+      }
+    }
+    .news-item__title {
+      display: inline-block;
+      padding: 0;
+      font-size: 18px;
+      width: 230px;
+      vertical-align: middle;
+      text-align: left;
+    }
+  }
+  .klinik-slider span {
+    &.prev-arr {
+      left: 40px;
+    }
+    &.next-arr {
+      right: 40px;
+    }
+  }
+  .klinik-team-search-block {
+    .search-form-wraper {
+      width: 100%;
+    }
+    .dropdown {
+      width: 100%;
+      .klinik__dropdown-btn {
+        border-top: none;
+        border-left: 2px solid #dadcdd;
+      }
+    }
+  }
+  .klinik-line {
+    .avatar, .info, .links {
+      width: 100%;
+    }
+    .avatar img {
+      margin: 0 auto;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  .klinik-banner {
+    margin-top: 10px;
+    img {
+      width: auto;
+    }
+    .banner-content h2 {
+      font-size: 26px;
+    }
+    .b-tablist li {
+      width: 80px;
+      min-height: 50px;
+      margin-right: 5px;
+      a {
+        font-size: 16px;
+        line-height: 50px;
+      }
+      &.active {
+        padding-top: 5px;
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .klinik-search {
+    margin-bottom: 40px;
+    .search-form-wraper {
+      width: 100%;
+    }
+    .dropdown {
+      width: 100%;
+      .klinik__dropdown-btn {
+        margin-top: 5px;
+      }
+    }
+  }
+  .klinik-tab ul li {
+    a {
+      font-size: 18px;
+    }
+    li a {
+      font-size: 16px;
+    }
+  }
+  .klinik-line__b-contact {
+    text-align: center;
+    .mb {
+      margin-bottom: 0;
+    }
+    p {
+      display: block;
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
+  }
+  .klinik-line__b-team {
+    width: 100%;
+  }
+  .klinik-line {
+    .klinik-accordion .panel .accordion-btn {
+      font-size: 14px;
+    }
+    .b-tablist li {
+      width: 31%;
+      padding-top: 10px;
+      a {
+        font-size: 14px;
+        line-height: 14px;
+        word-wrap: break-word;
+      }
+      &.active a {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+  #map {
+    height: 300px;
+  }
+  .klinik-contacts {
+    .wraper {
+      background-color: #fff;
+    }
+  }
+  .ctype-ce_body_compass {
+    .body-map-img {
+      position: relative;
+    }
+    .body-compass-inf {
+      h3 {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+    .text-with-arrow {
+      .circle {
+        width: 30px;
+        height: 30px;
+        &:before {
+          width: 14px;
+          height: 14px;
+        }
+      }
+      p {
+        max-width: calc(100% - 50px);
+      }
+    }
+    .body-compass-lists {
+      padding-left: 47px;
+      ul {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 321px) and (max-width: 479px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  .scroll-top-btn {
+    left: calc(50% - 30px);
+  }
+  .slider {
+    margin-top: 10px;
+    .slider__wraper .slider__item {
+      width: 100vw;
+      .slide {
+        img {
+          height: 100%;
+          width: auto;
+        }
+        .text-block {
+          display: block;
+          width: 80%;
+          max-width: 275px;
+          opacity: 1;
+          right: auto;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .dots {
+      right: 40%;
+    }
+    &.slider-2 #carousel {
+      .carousel-control {
+        &.left {
+          height: 185px;
+          left: 15px;
+        }
+        &.right {
+          height: 185px;
+          left: calc(100% - 60px);
+        }
+      }
+      .carousel-indicators {
+        bottom: auto;
+        top: 200px;
+      }
+      .carousel-inner .item .slide {
+        height: 185px;
+      }
+    }
+  }
+  .content-line {
+    .family {
+      .family__b-text {
+        h2 {
+          font-size: 4vw;
+          line-height: 4vw;
+        }
+        .find_expert {
+          height: 20px;
+          font-size: 14px;
+          line-height: 20px;
+          width: 100px;
+          &:after {
+            height: 20px;
+            width: 10px;
+            right: -10px;
+            border: 10px solid #fff;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            border-right: none;
+          }
+        }
+      }
+    }
+    .box {
+      .box__b-photo {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .box__b-bg {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    
+  }
+  .content-line__title {
+    font-size: 28px;
+  }
+  .header {
+    padding-top: 10px;
+    padding-bottom: 0;
+    .header__top-nav {
+      li {
+        #searchFieldMobile {
+          right: 0;
+          width: calc(100vw - 45px);
+          input[type="text"] {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .header__main-nav {
+      display: none;
+      position: absolute;
+      top: 19px;
+      left: 0;
+      z-index: 99999;
+      background-color: #445055;
+      width: 100%;
+      min-width: 320px;
+      .container, .row, .unrelative-position {
+        padding: 0;
+        margin: 0;
+      }
+      .menu-items {
+        display: block;
+        padding-top: 40px;
+        li {
+          border-top: 2px solid rgba(255, 255, 255, 0.2);
+          padding: 10px 0;
+          position: relative;
+          width: 100%;
+          &:last-child {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+          }
+          a {
+            border: none;
+            color: #fff;
+          }
+          &:after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-left: 2px solid rgba(255, 255, 255, 0.2);
+            position: absolute;
+            right: 0;
+            top: 5px;
+            background-image: url(../Images/dropdown_btn.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          &:hover {
+            background-color: #009dca;
+          }
+          &.open {
+            background-color: #009dca;
+            .submenu-list {
+              display: block;
+            }
+            &:after {
+              border-left: none;
+              border-right: 2px solid rgba(255, 255, 255, 0.2);
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .content-line {
+    .box h2 {
+      width: 100%;
+      font-size: 22px;
+      line-height: 24px;
+    }
+    .panel-news {
+      .accordion-header {
+        height: auto;
+        h2 {
+          font-size: 14px;
+          float: none;
+        }
+        a {
+          font-size: 14px;
+          float: left;
+          left: 0;
+        }
+      }
+      .date-btn {
+        font-size: 16px;
+      }
+      .accordion-btn {
+        font-size: 16px;
+        .tag {
+          display: block;
+        }
+      }
+    }
+  }
+  .footer {
+    .footer__nav-links {
+      padding: 10px 0;
+    }
+    .footer__links-list {
+      text-align: center;
+      .white-bg-column:after {
+        display: none;
+      }
+    }
+  }
+  .breadcrumbs {
+    margin-top: 15px;
+    ol.breadcrumb li {
+      display: none;
+      &:last-child, &:first-child {
+        display: inline-block;
+      }
+    }
+  }
+  .banner {
+    position: relative;
+    height: 230px;
+    img {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: auto;
+      max-width: 200%;
+    }
+    .banner__b-info {
+      background-color: transparent;
+    }
+    .banner__b-info__right h4 {
+      font-size: 14px;
+      font-family: 'DaxlinePro-Medium';
+      color: #009dca;
+      top: 0;
+    }
+  }
+  .aside-nav__list {
+    display: none;
+    li {
+      text-align: center;
+      background-color: #f5f6f6;
+    }
+  }
+  .klinik-blocks__block-list li a {
+    font-size: 16px;
+  }
+  .klinik-news {
+    .news-item {
+      text-align: left;
+    }
+    .news-item__date {
+      width: 51px;
+      height: 51px;
+      font-size: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-top: 0;
+      span {
+        font-size: 21px;
+      }
+    }
+    .news-item__title {
+      display: inline-block;
+      padding: 0;
+      font-size: 18px;
+      width: 230px;
+      vertical-align: middle;
+      text-align: left;
+    }
+  }
+  .klinik-slider span {
+    &.prev-arr {
+      left: 40px;
+    }
+    &.next-arr {
+      right: 40px;
+    }
+  }
+  .klinik-team-search-block {
+    .search-form-wraper {
+      width: 100%;
+    }
+    .dropdown {
+      width: 100%;
+      .klinik__dropdown-btn {
+        border-top: none;
+        border-left: 2px solid #dadcdd;
+      }
+    }
+  }
+  .klinik-line {
+    .avatar, .info, .links {
+      width: 100%;
+    }
+    .avatar img {
+      margin: 0 auto;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  .klinik-banner {
+    margin-top: 10px;
+    img {
+      width: auto;
+    }
+    .banner-content h2 {
+      font-size: 26px;
+    }
+    .b-tablist li {
+      width: 80px;
+      min-height: 50px;
+      margin-right: 5px;
+      a {
+        font-size: 16px;
+        line-height: 50px;
+      }
+      &.active {
+        padding-top: 5px;
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .klinik-search {
+    margin-bottom: 40px;
+    .search-form-wraper {
+      width: 100%;
+    }
+    .dropdown {
+      width: 100%;
+      .klinik__dropdown-btn {
+        margin-top: 5px;
+      }
+    }
+  }
+  .klinik-tab ul li {
+    a {
+      font-size: 18px;
+    }
+    li a {
+      font-size: 16px;
+    }
+  }
+  .klinik-line__b-contact {
+    text-align: center;
+    .mb {
+      margin-bottom: 0;
+    }
+    p {
+      display: block;
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
+  }
+  .klinik-line__b-team {
+    width: 100%;
+  }
+  .klinik-line {
+    .klinik-accordion .panel .accordion-btn {
+      font-size: 18px;
+    }
+    .b-tablist li {
+      width: 31%;
+      padding-top: 10px;
+      a {
+        font-size: 14px;
+        line-height: 14px;
+        word-wrap: break-word;
+      }
+      &.active a {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+  #map {
+    height: 300px;
+  }
+  .klinik-contacts {
+    .wraper {
+      background-color: #fff;
+    }
+  }
+  .ctype-ce_body_compass {
+    .body-map-img {
+      position: relative;
+    }
+    .body-compass-inf {
+      h3 {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+    .text-with-arrow {
+      .circle {
+        width: 30px;
+        height: 30px;
+        &:before {
+          width: 14px;
+          height: 14px;
+        }
+      }
+      p {
+        max-width: calc(100% - 50px);
+      }
+    }
+    .body-compass-lists {
+      padding-left: 47px;
+      ul {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  .content-line {
+    .family {
+      .family__b-text {
+        h2 {
+          line-height: 23px;
+        }
+      }
+    }
+    .box {
+      .box__b-photo {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .box__b-bg {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .slider {
+    margin-top: 10px;
+    .slider__wraper .slider__item {
+      width: 100vw;
+      .slide {
+        img {
+          width: 150%;
+        }
+        .text-block {
+          display: block;
+          width: 80%;
+          max-width: 275px;
+          opacity: 1;
+          right: auto;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .dots {
+      right: 40%;
+    }
+    &.slider-2 #carousel .carousel-control {
+      &.left {
+        left: 15px;
+      }
+      &.right {
+        left: calc(100% - 60px);
+      }
+    }
+  }
+  .header {
+    padding-top: 10px;
+    padding-bottom: 0;
+    .header__top-nav {
+      li {
+        #searchFieldMobile {
+          right: 0;
+          width: calc(100vw - 45px);
+          input[type="text"] {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .header__main-nav {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      z-index: 99999;
+      background-color: #445055;
+      width: 100%;
+      min-width: 320px;
+      .container, .row, .unrelative-position {
+        padding: 0;
+        margin: 0;
+      }
+      .menu-items {
+        display: block;
+        padding-top: 40px;
+        li {
+          width: 100%;
+          border-top: 2px solid rgba(255, 255, 255, 0.2);
+          padding: 10px 0;
+          position: relative;
+          &:last-child {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+          }
+          a {
+            border: none;
+            color: #fff;
+          }
+          &:after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-left: 2px solid rgba(255, 255, 255, 0.2);
+            position: absolute;
+            right: 0;
+            top: 5px;
+            background-image: url(../Images/dropdown_btn.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          &:hover {
+            background-color: #009dca;
+          }
+          &.open {
+            background-color: #009dca;
+            .submenu-list {
+              display: block;
+            }
+            &:after {
+              border-left: none;
+              border-right: 2px solid rgba(255, 255, 255, 0.2);
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .panel-news {
+    .accordion-header {
+      height: auto;
+      h2, a {
+        font-size: 14px;
+      }
+    }
+    .date-btn, .accordion-btn {
+      font-size: 16px;
+    }
+  }
+  .footer {
+    .footer__nav-links {
+      padding: 10px 0;
+    }
+    .footer__links-list {
+      text-align: center;
+      .white-bg-column:after {
+        display: none;
+      }
+    }
+  }
+  .breadcrumbs {
+    margin-top: 15px;
+    ol.breadcrumb li {
+      display: none;
+      &:last-child, &:first-child {
+        display: inline-block;
+      }
+    }
+  }
+  .banner {
+    position: relative;
+    .banner__b-info {
+      background-color: transparent;
+    }
+    .banner__b-info__right h4 {
+      font-size: 18px;
+      font-family: 'DaxlinePro-Medium';
+      color: #009dca;
+      top: 0;
+    }
+  }
+  .aside-nav__list {
+    display: none;
+    li {
+      text-align: center;
+      background-color: #f5f6f6;
+    }
+  }
+  .klinik-news {
+    .news-item {
+      text-align: left;
+    }
+    .news-item__date {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .news-item__title {
+      display: inline-block;
+      padding: 0;
+      width: 330px;
+      vertical-align: middle;
+      text-align: left;
+    }
+  }
+  .klinik-slider span {
+    &.prev-arr {
+      left: 10px;
+    }
+    &.next-arr {
+      right: 10px;
+    }
+  }
+  .klinik-line {
+    .info {
+      width: calc(98% - 200px);
+    }
+    .links {
+      width: 100%;
+      text-align: right;
+      a {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+  .klinik-banner {
+    margin-top: 10px;
+    img {
+      width: auto;
+    }
+    .banner-content h2 {
+      font-size: 40px;
+    }
+    .b-tablist li {
+      width: 135px;
+    }
+  }
+  .klinik-line__b-contact {
+    text-align: center;
+    .mb {
+      margin-bottom: 0;
+    }
+    p {
+      display: block;
+      padding-bottom: 20px;
+    }
+  }
+  .klinik-line__b-team {
+    width: 100%;
+  }
+  .klinik-line {
+    .klinik-accordion .panel .accordion-btn {
+      font-size: 18px;
+    }
+    .b-tablist li {
+      width: 31%;
+      padding-top: 10px;
+      a {
+        font-size: 18px;
+        line-height: 18px;
+        word-wrap: break-word;
+      }
+      &.active a {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+  #map {
+    height: 300px;
+  }
+  .klinik-contacts {
+    .wraper {
+      background-color: #fff;
+    }
+  }
+  .ctype-ce_body_compass {
+    .body-map-img {
+      position: relative;
+    }
+    .body-compass-inf {
+      h3 {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+    .text-with-arrow {
+      .circle {
+        width: 30px;
+        height: 30px;
+        &:before {
+          width: 14px;
+          height: 14px;
+        }
+      }
+      p {
+        max-width: calc(100% - 50px);
+      }
+    }
+    .body-compass-lists {
+      padding-left: 47px;
+      ul {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .content-line {
+    .family {
+      .family__b-text {
+        h2 {
+          line-height: 23px;
+        }
+      }
+    }
+    .box {
+      .box__b-bg, .box__b-photo {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .slider {
+    margin-top: 10px;
+    .slider__wraper .slider__item {
+      width: 100vw;
+      .slide {
+        img {
+          width: 150%;
+        }
+        .text-block {
+          display: block;
+          width: 80%;
+          max-width: 275px;
+          opacity: 1;          
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .dots {
+      right: 40%;
+    }
+    &.slider-2 #carousel .carousel-control.left {
+      left: -45px;
+    }
+  }
+  .header {
+    padding-top: 10px;
+    padding-bottom: 0;
+    .header__main-nav {
+      display: none;
+      position: absolute;
+      top: 19px;
+      left: 0;
+      z-index: 99999;
+      background-color: #445055;
+      width: 100%;
+      min-width: 320px;
+      .container, .row, .unrelative-position {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+      .menu-items {
+        display: block;
+        padding-top: 40px;
+        li {
+          width: 100%;
+          border-top: 2px solid rgba(255, 255, 255, 0.2);
+          padding: 10px 0;
+          position: relative;
+          &:last-child {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+          }
+          a {
+            border: none;
+            color: #fff;
+          }
+          &:after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-left: 2px solid rgba(255, 255, 255, 0.2);
+            position: absolute;
+            right: 0;
+            top: 5px;
+            background-image: url(../Images/dropdown_btn.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          &:hover {
+            background-color: #009dca;
+          }
+          &.open {
+            background-color: #009dca;
+            .submenu-list {
+              display: block;
+            }
+            &:after {
+              border-left: none;
+              border-right: 2px solid rgba(255, 255, 255, 0.2);
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer .col-custom-width {
+    width: 50%;
+  }
+  .footer {
+    .footer__nav {
+      .wraper {
+        padding-top: 5px;
+        min-height: 30px;
+        width: 100%;
+      }
+    }
+  }
+  .breadcrumbs {
+    margin-top: 50px;
+  }
+  .banner {
+    position: relative;
+    .banner__b-info {
+      background-color: transparent;
+    }
+    .banner__b-info__right h4 {
+      font-size: 18px;
+      font-family: 'DaxlinePro-Medium';
+      color: #009dca;
+      top: 0;
+    }
+  }
+  .aside-nav__list {
+    display: none;
+    li {
+      text-align: center;
+      background-color: #f5f6f6;
+    }
+  }
+  .klinik-news {
+    .news-item {
+      text-align: left;
+    }
+    .news-item__date {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .news-item__title {
+      display: inline-block;
+      padding: 0;
+      width: 430px;
+      vertical-align: middle;
+      text-align: left;
+    }
+  }
+  .klinik-line__b-contact {
+    text-align: center;
+    .mb {
+      margin-bottom: 0;
+    }
+    p {
+      display: block;
+      padding-bottom: 20px;
+    }
+  }
+  .klinik-line {
+    .klinik-accordion .panel .accordion-btn {
+      font-size: 18px;
+    }
+    .b-tablist li {
+      width: 31%;
+      padding-top: 10px;
+      a {
+        font-size: 18px;
+        line-height: 18px;
+        word-wrap: break-word;
+      }
+      &.active a {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+  .klinik-contacts {
+    .wraper {
+      background-color: #fff;
+    }
+  }
+  .ctype-ce_body_compass {
+    .text-with-arrow {
+      p {
+        max-width: calc(100% - 70px);
+      }
+    }
+    .body-compass-lists {
+      padding-left: 47px;
+      ul {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .slider {
+    margin-top: 10px;
+    .slider__wraper .slider__item {
+      width: 100vw;
+      .slide {
+        .text-block {
+          opacity: 1;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .dots {
+      right: 5%;
+    }
+    &.slider-2 #carousel .carousel-control {
+      &.left {
+        left: 15px;
+      }
+      &.right {
+        left: calc(100% - 60px);
+      }
+    }
+  }
+  .header .header__main-nav {
+    .menu-items > li > a {
+      font-size: 18px;
+    }
+    .header__main-nav__flyout {
+      a.more-link_fz {
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+        &:after {
+          border-width: 20px;
+        }
+      }
+      .b-thumbnail .b-thumbnail__btn-block {
+        padding-top: 120px;
+      }
+    }
+  }
+  .content-line {
+    .box h2 {
+      font-size: 19px;
+    }
+    .box .box__link {
+      font-size: 14px;
+    }
+  }
+  .banner .banner__b-info__left h2, 
+  .banner .banner__b-info__left h1 {
+    font-size: 28px;
+  }
+  .klinik-line__b-contact {
+    text-align: center;
+  }
+  .klinik-line .b-tablist li {
+    a {
+      font-size: 16px;
+      word-wrap: break-word;
+    }
+    &.active a {
+      font-size: 16px;
+    }
+  }
+  .ctype-ce_body_compass {
+    .body-compass-lists {
+      padding-left: 47px;
+      ul {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

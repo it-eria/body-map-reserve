@@ -1,0 +1,162 @@
+.klinik-search-block {
+  padding-bottom: 50px;
+  .title {
+    font-family: 'DaxlinePro-Light';
+    font-size: 36px;
+    color: #434f55;
+  }
+  .search-form-wraper {
+    width: 70%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .dropdown {
+    float: left;
+    width: 30%;
+    .klinik__dropdown-btn {
+      display: block;
+      width: 100%;
+      height: 50px;
+      font-family: 'DaxlinePro-Regular';
+      line-height: 50px;
+      font-size: 21px;
+      border: 2px solid #dadcdd;
+      border-left: none;
+      text-align: center;
+      text-decoration: none;
+      color: #434f55;
+      background-color: #f5f6f6;
+      .dropdown_arr {
+        display: inline-block;
+        width: 18px;
+        height: 11px;
+        background-image: url(../Images/dropdown_dark_btn.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+  input {
+    &[type="text"] {
+      margin: 0;
+      padding: 0 33px 0 10px;
+      width: 100%;
+      height: 50px;
+      font-family: 'DaxlinePro-Regular';
+      font-size: 21px;
+      color: #434f55;
+      border: 2px solid #dadcdd;
+      outline: none;
+      &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        display: block;
+        opacity: 1;
+        color: rgb(67,79,85);
+      }
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        display: block;
+        opacity: 1;
+        color: rgb(67,79,85);
+      }
+      &:-ms-input-placeholder {
+        /* IE 10+ */
+        display: block;
+        opacity: 1;
+        color: rgb(67,79,85);
+      }
+      &:-moz-placeholder {
+        /* Firefox 18- */
+        display: block;
+        opacity: 1;
+        color: rgb(67,79,85);
+      }
+    }
+    &[type="submit"] {
+      position: absolute;
+      top: calc(50% - 11px);
+      right: 10px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      height: 23px;
+      width: 23px;
+      background-image: url(../Images/search-ico-mob.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.klinik-line__title {
+  color: #009dca;
+  font-family: 'DaxlinePro-Medium';
+  font-size: 30px;
+  margin-bottom: 23px;
+}
+
+.klinik-line {
+  padding-bottom: 50px;
+  .team-item {
+    padding: 20px;
+    border: 2px solid #dadcdd;
+    margin-bottom: 30px;
+  }
+  .avatar, .info, .links {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .avatar {
+    width: 200px;
+    text-align: center;
+  }
+  .info {
+    width: calc(80% - 200px);
+    h4 {
+      font-family: 'DaxlinePro-Bold';
+      font-size: 18px;
+      color: #445055;
+      margin-bottom: 3px;
+    }
+    p {
+      font-family: 'DaxlinePro-Regular';
+      font-size: 18px;
+      color: #445055;
+      padding-bottom: 30px;
+    }
+  }
+  .links a {
+    font-family: 'DaxlinePro-Bold';
+    font-size: 18px;
+    color: #445055;
+    text-decoration: none;
+    display: block;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+      border-radius: 50%;
+      background-color: #434f55;
+      background-image: url(../Images/klinik-team-sprites.png);
+      background-repeat: no-repeat;
+      position: relative;
+      top: 2px;
+      border: 1px solid #434f55;
+    }
+    &.contact {
+      padding-top: 7px;
+      &:before {
+        background-position: -1px center;
+      }
+    }
+    &.details:before {
+      background-position: -19px 1px;
+    }
+  }
+}

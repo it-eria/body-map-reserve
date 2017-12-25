@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="typo3conf/ext/as_template/Resources/Public/StyleSheets/bootstrap.css">
+    <link rel="stylesheet" href="typo3conf/ext/as_template/Resources/Public/StyleSheets/slick.css">
+    <link rel="stylesheet" href="typo3conf/ext/as_template/Resources/Public/StyleSheets/style.css">    
+</head>
+<body>
+    <header class="header" id="header"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <a href="#" class="logo">
+                        <img src="typo3conf/ext/as_template/Resources/Public/Images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-9 col-md-10 hidden-md hidden-lg">
+                    <ul class="header__top-nav header__top-nav_m">
+                        <li>
+                            <a class="btn" role="button" data-toggle="collapse" href="#searchFieldMobile"><span class="search-ico_mobile"></span></a>
+                            <div id="searchFieldMobile" class="collapse">
+                                <form action="">
+                                    <input type="text" placeholder="search">
+                                    <input type="submit" value="">
+                                </form>
+                            </div>
+                        </li>
+                        <li><a href="#"><span class="plus-ico_mobile"></span></a></li>
+                        <li>
+                            <a href="#" class="burger-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-10">
+                    <ul class="header__top-nav">
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Anreise</a></li>
+                        <li><a href="#">Lageplan</a></li>
+                        <li><a href="#">Presse</a></li>
+                        <li><a href="#">Stellenangebote</a></li>
+                        <li><a href="#">Ihre Meinung</a></li>
+                        <li class="in-border"><a href="#">Notfall <span class="plus-ico"></span></a></li>
+												<li class="in-border">
+                             <a class="btn collapsed" role="button" data-toggle="collapse" href="#searchField">Suche <span class="search-ico"></span></a>
+                             <div id="searchField" class="collapse">
+                                 <form action="">
+                                     <input type="text" placeholder="Suchbegriff eingeben">
+                                     <input type="submit" value="Los">
+                                 </form>
+                             </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="header__main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 unrelative-position">
+                        <ul class="menu-items">
+                            <li class="active">
+                                <a href="#">Patienten <span class="f_regular">&</span> Besucher</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="b-thumbnail">
+                                                    <a href="#"><img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-1.jpg" alt="thumbnail"></a>
+                                                    <div class="b-thumbnail__link b-thumbnail__link_blue">
+                                                        <a href="#">Experten finden</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="links-list">
+                                                    <li><a href="#">Ihren Aufenthalt planen</a></li>
+                                                    <li><a href="#">Anreisen & Parken</a></li>
+                                                    <li><a href="#">Besuch bekommen</a></li>
+                                                    <li><a href="#">Einkaufen & Services</a></li>
+                                                    <li><a href="#">Nach Ihrem Aufenthalt</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4 col-md-offset-1">
+                                                <ul class="links-list">
+                                                    <li><a href="#">Qualität & Sicherheit</a></li>
+                                                    <li><a href="#">Hygiene im Klinikum</a></li>
+                                                    <li><a href="#">An klinischen Studien teilnehmen</a></li>
+                                                    <li><a href="#">Veranstaltungen & Termine</a></li>
+                                                </ul>
+                                                <div class="b-thumbnail">
+                                                    <a href="#"><img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-2.jpg" alt="thumbnail"></a>
+                                                    <div class="b-thumbnail__link b-thumbnail__link_green">
+                                                        <a href="#">Häufige Fragen</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-md-offset-1">
+                                                <a href="#" class="more-link more-link_blue">Lob & Tadel</a>
+                                                <a href="#" class="more-link more-link_green">Mediathek</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Experten finden</a></li>
+                                    <li><a href="#">Ihren Aufenthalt planen</a></li>
+                                    <li><a href="#">Anreisen & Parken</a></li>
+                                    <li><a href="#">Besuch bekommen</a></li>
+                                    <li><a href="#">Hygiene im Klinikum</a></li>
+                                    <li><a href="#">Nach Ihrem Aufenthalt</a></li>
+                                    <li><a href="#">Einkaufen & Services</a></li>
+                                    <li><a href="#">An klinischen Studien teilnehmen</a></li>
+                                    <li><a href="#">Veranstaltungen & Termine</a></li>
+                                    <li><a href="#">Mediathek</a></li>
+                                    <li><a href="#">Lob und Tadel</a></li>
+                                    <li><a href="#">Häufige Fragen</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Kliniken <span class="f_regular">&</span> Zentren</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <a href="#" class="more-link more-link_blue">Kliniken von A bis Z</a>
+                                                <a href="#" class="more-link more-link_green">Zentren</a>
+                                                <a href="#" class="more-link more-link_white">Institute</a>
+                                            </div>
+                                            <div class="col-md-8 col-md-offset-1">
+                                                <h2>
+                                                    <span class="f_medium">Die Ulmer Universitätsmedizin</span>
+                                                    bietet Ihnen fächerübergreifende universitäre Spitzenmedizin, die Krankenversorgung, Forschung und Lehre verbindet.
+                                                </h2>
+ 																								<div class="row">
+																									<div class="col-md-6">
+																										<div class="b-thumbnail">
+                                                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-3.jpg" alt="thumbnail">
+                                                    </div>
+																									</div>
+																									<div class="col-md-6">
+																										<ul class="links-list">
+                                                        <li><a href="#">Infos für Zuweiser</a></li>
+                                                        <li><a href="#">Experten finden</a></li>
+                                                        <li><a href="#">Seltene Erkrankungen</a></li>
+                                                    </ul>
+																									</div>
+																								</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Über uns</a></li>
+                                    <li><a href="#">Sprechstunden / Ambulanzen</a></li>
+                                    <li><a href="#">Infos zum Klinikaufenthalt</a></li>
+                                    <li><a href="#">Infos für Ärzte</a></li>
+                                    <li><a href="#">Forschung/Klinische Studien</a></li>
+                                    <li><a href="#">Lehre</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Forschung</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h2>
+                                                    <span class="f_medium">Die Ulmer Universitätsmedizin</span>
+                                                    bietet Ihnen fächerübergreifende universitäre Spitzenmedizin, die Krankenversorgung, Forschung und Lehre verbindet.
+                                                </h2>
+																								<div class="row">
+																									<div class="col-md-7">
+																										<div class="b-thumbnail">
+                                                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-4.jpg" alt="thumbnail">
+                                                    </div>
+																									</div>
+																									<div class="col-md-5">
+																										<ul class="links-list">
+                                                        <li><a href="#">Forschungsschwerpunkte</a></li>
+                                                        <li><a href="#">Aktuelle klinische Studien</a></li>
+                                                        <li><a href="#">Medizinische Fakultät</a></li>
+                                                        <li><a href="#">Ansprechpartner</a></li>
+                                                        <li><a href="#">Veranstaltungen & Kongresse</a></li>
+                                                    </ul>
+																									</div>
+																								</div>
+
+                                            </div>
+                                            <div class="col-md-3 col-md-offset-2">
+                                                <h2><span class="f_medium">Klinische Studien finden</span></h2>
+                                                <div class="dropdown show">
+                                                    <a class="flyout-btn flyout-btn_blue dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Fachabteilung wählen <span class="dropdown-arrow"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">item 1</a>
+                                                        <a class="dropdown-item" href="#">item 2</a>
+                                                        <a class="dropdown-item" href="#">item 3</a>
+                                                        <a class="dropdown-item" href="#">item 4</a>
+                                                        <a class="dropdown-item" href="#">item 5</a>
+                                                        <a class="dropdown-item" href="#">item 6</a>
+                                                    </div>
+                                                </div>
+                                                <p class="divider">
+                                                    <span class="line"></span>
+                                                    oder
+                                                    <span class="line"></span>
+                                                </p>
+                                                <div class="flyout-btn flyout-btn_green">
+                                                    <form action="">
+                                                        <input type="text" placeholder="Stichwort eingeben">
+                                                        <input type="submit" value="">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Forschungsschwerpunkte</a></li>
+                                    <li><a href="#">Aktuelle klinische Studien am Uniklinikum</a></li>
+                                    <li><a href="#">Medizinische Fakultät</a></li>
+                                    <li><a href="#">Ansprechpartner</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Ausbildung <span class="f_regular">&</span> Karriere</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <ul class="links-list">
+                                                    <li><a href="#">Berufsgruppen</a></li>
+                                                    <li><a href="#">Arbeiten im Uniklinikum Ulm</a></li>
+                                                    <li><a href="#">Ausbildung & Studium</a></li>
+                                                    <li><a href="#">Stellenangebote</a></li>
+                                                    <li><a href="#">Jetzt bewerben</a></li>
+                                                </ul>
+                                            </div>
+																						<div class="col-md-5 col-md-offset-1">
+                                              <div class="b-thumbnail">
+                                                  <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/flyout-thumbnail-5.jpg" alt="thumbnail">
+                                                  <div class="b-thumbnail__link b-thumbnail__link_transp">
+                                                      <a href="#">Werden Sie Teil unseres Teams!</a>
+                                                  </div>
+                                                  <div class="b-thumbnail__btn-block">
+                                                      <a href="#" class="more-link more-link_blue">Pflege</a>
+                                                      <a href="#" class="more-link more-link_green">Ärzte</a>
+                                                  </div>
+                                              </div>
+                                            </div>
+																						<div class="col-md-3">
+																							<ul class="links-list">
+                                                  <li><a href="#">Medizin-Studenten & PJ-ler</a></li>
+                                                  <li><a href="#">Wissenschaftler</a></li>
+                                                  <li><a href="#">Medizinisch-technischer Dienst</a></li>
+                                                  <li><a href="#">Therapeuten</a></li>
+                                                  <li><a href="#">Verwaltung, Technik & IT</a></li>
+                                                  <li><a href="#">BFD / FSJ</a></li>
+                                              </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Berufsgruppen</a></li>
+                                    <li><a href="#">Arbeiten am Uniklinikum Ulm</a></li>
+                                    <li><a href="#">Stellenmarkt / Jetzt bewerben</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Über uns</a>
+                                <div class="header__main-nav__flyout hidden-xs hidden-sm">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <ul class="links-list">
+                                                    <li><a href="#">Leitbild</a></li>
+                                                    <li><a href="#">Management</a></li>
+                                                    <li><a href="#">Pflege am UKU</a></li>
+                                                    <li><a href="#">Zentrale Einrichtungen</a></li>
+                                                    <li><a href="#">Zahlen & Fakten</a></li>
+                                                    <li><a href="#">Dienstleistungsgesellschaft</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3 col-md-offset-1">
+                                                <ul class="links-list">
+                                                    <li><a href="#">Universitätsgesellschaft</a></li>
+                                                    <li><a href="#">Universitätsstiftung</a></li>
+                                                    <li><a href="#">Publikationen & Downloads</a></li>
+                                                    <li><a href="#">Soziale Verantwortung</a></li>
+                                                    <li><a href="#">International</a></li>
+                                                    <li><a href="#">Kooperierende Einrichtungen</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4 col-md-offset-1">
+                                                <ul class="links-list">
+                                                    <li class="bt">
+                                                        <a href="#">
+																													<span class="date">
+	                                                            01. April 2017, Stadthaus Ulm
+	                                                        </span>
+                                                            Keine bösen Überraschungen!
+                                                            <span class="f_light">
+                                                                Information und Motivation 
+                                                                zur Darmkrebsvorsorge <span class="f_medium">></span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <a href="#" class="more-link more-link_blue more-link_fz">Aktuelles</a>
+                                                    </div>
+                                                    <div class="col-md-6 col-md-offset-1">
+                                                        <a href="#" class="more-link more-link_green more-link_fz">Veranstaltungen</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="submenu-list hidden-md hidden-lg">
+                                    <li><a href="#">Zahlen & Fakten</a></li>
+                                    <li><a href="#">Leitbild</a></li>
+                                    <li><a href="#">Management</a></li>
+                                    <li><a href="#">Zentrale Einrichtungen</a></li>
+                                    <li><a href="#">Pflege am UKU</a></li>
+                                    <li><a href="#">Dienstleistungsgesellschaft Universitätsklinikum Ulm mbH</a></li>
+                                    <li><a href="#">Universitätsgesellschaft</a></li>
+                                    <li><a href="#">Universitätsstiftung</a></li>
+                                    <li><a href="#">Veranstaltungen & Termine</a></li>
+                                    <li><a href="#">Aktuelles & Publikationen</a></li>
+                                    <li><a href="#">Soziale Verantwortung</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Kooperierende Einrichtungen</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="header__top-nav_mob hidden-md hidden-lg">
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Anreise</a></li>
+                            <li><a href="#">Lageplan</a></li>
+                            <li><a href="#">Presse</a></li>
+                            <li><a href="#">Stellenangebote</a></li>
+                            <li><a href="#">Ihre Meinung</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+		<section class="top-banner">
+			<img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/banner-patienten-besucher.jpg">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-lg-6 banner-content">
+						<h2>
+			 				Ein Arbeitsplatz<br /><span class="f_bold">mit Perspektive</span>
+						</h2>
+						<p>Arbeiten im Universitätsklinikum: jeden Tag spannende und herausfordernde Aufgaben. Lernen Sie uns kennen!</p>
+						<a href="#" class="arrow">Video ansehen</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h3 class="content-line__title">Wie können wir Ihnen helfen?</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<section>
+									<div class="box box_no-brdr family">
+                    <div class="box__b-bg">
+                        <img src="typo3conf/ext/as_template/Resources/Public/Images/family-bg-new.jpg" alt="thumbnail">
+                    </div>
+										<div class="b-text family__b-text">
+												<div class="box__b-bg">
+                            <img src="typo3conf/ext/as_template/Resources/Public/Images/u-blue.png" alt=""">
+                        </div>
+                        <div class="b-text">
+													<h2>
+                            <span class="f_medium">Diagnostik und Therapie auf universitärem Spitzenniveau</span>
+                        	</h2>
+                        	<p>
+                            Bei uns finden
+                            Sie die besten Experten für Ihre Erkrankung.
+                        	</p>
+												</div>
+                        <a href="#" class="box__link">Experten finden</a>
+                    </div>
+									</div>
+                </section>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <section>
+													<div class="box box_blue" data-mh="group-1">
+                            <div class="b-text">
+                                <h2>
+                                    <span class="f_medium">Kompetenzen, Komfort, Kosten?</span>
+                                </h2>
+                                <p>Antworten auf häufige Fragen - von A wie Aufnahme bis Z wie Zahnersatz:</p>
+                            </div>                                
+                            <div class="dropdown show">
+                                <a class="dropdown__link dropdown-toggle" href="#" id="dropdownMenuLinkThemeChoice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Thema wählen
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkThemeChoice">
+                                    <a class="dropdown-item" href="#">item 1</a>
+                                    <a class="dropdown-item" href="#">item 2</a>
+                                    <a class="dropdown-item" href="#">item 3</a>
+                                    <a class="dropdown-item" href="#">item 4</a>
+                                    <a class="dropdown-item" href="#">item 5</a>
+                                    <a class="dropdown-item" href="#">item 6</a>
+                                </div>
+                            </div>
+													</div>
+                        </section>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+												<section>
+													<div class="box box_green" data-mh="group-1">
+                            <div class="b-text">
+                                <h2>
+                                    <span class="f_medium">Ihr Weg zu uns</span>
+                                </h2>
+                                <p>
+                                     So finden Sie schnell zum Ziel.
+                                </p>
+                            </div>
+														<div class="box__b-photo">
+                                <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/ways_pic.jpg" alt="thumbnail">
+                            </div>
+                            <a href="#" class="box__link">Anreise & Lagepläne</a>
+													</div>
+                        </section>
+                    </div>
+                    <div class="col-xs-12">
+												<section>
+                        	<div class="box">
+                            <div class="b-text">
+                                <h2>
+                                    <span class="f_medium">Das Uniklinikum stellt sich vor</span>                                         
+                                </h2>
+                                <p>
+                                    Im Kurzfilm erfahren Sie, wer wir sind und was wir tun.
+                                </p>
+                            </div>                                
+                            <a href="#" data-toggle="modal" data-target="#boxModal" class="popup-btn box__popup-link">
+                                <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/video-thumbnail.jpg" alt="thumbnail">
+                                <span class="play-btn"></span>
+                            </a>
+                            <div class="modal fade" id="boxModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close" type="button" data-dismiss="modal">x</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Put Video Here
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+													</div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h3 class="content-line__title">Ausbildung & Karriere</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+												<section>
+													<div class="box box_green" data-mh="group-2">
+                            <div class="b-text" data-mh="group-2_1">
+                                <h2>
+                                    <span class="f_medium">Kita für die Kleinen </span>
+                                </h2>
+                                <p>
+                                    Wir bieten ganztägige Kinderbetreuung in der klinikumseigenen Kita.
+                                </p>
+                            </div>
+                            <div class="box__b-photo">
+                                <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/career-item-thumbnail-1.jpg" alt="thumbnail">
+                            </div>
+														<a href="#" class="box__link">zur Kita</a>
+													</div>
+                        </section>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+												<section>
+													<div class="box box_blue" data-mh="group-2">
+                            <div class="b-text" data-mh="group-2_1">
+                                <h2>
+                                    <span class="f_medium">PJ im Uniklinikum Ulm </span>
+                                </h2>
+                                <p>
+                                    Sie suchen spannende und anspruchsvolle Aufgaben? Dann sind Sie bei uns genau richtig!
+                                </p>
+                            </div>
+                            <div class="box__b-photo">
+                                <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/career-item-thumbnail-2.jpg" alt="thumbnail">
+                            </div>
+														<a href="#" class="box__link">Details</a>
+													</div>
+                        </section>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+												<section>
+													<div class="box box_no-brdr career" data-mh="group-2">
+                            <div class="box__b-bg">
+                                <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/career-item-thumbnail-3.jpg" alt="thumbnail">
+                            </div>
+                            <div class="b-text">
+                                <h2>
+                                    <span class="f_medium">Ihre Zukunft im Uniklinikum </span>
+                                </h2>
+                                <p>
+                                    Wir freuen uns auf Ihre Bewerbung!
+                                </p>
+                            </div>
+                            <div class="dropdown show">
+                                <a class="dropdown__link dropdown-toggle" href="#" id="dropdownMenuLinkCarrer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Berufsgruppe wählen
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkCareer">
+                                    <a class="dropdown-item" href="#">item 1</a>
+                                    <a class="dropdown-item" href="#">item 2</a>
+                                    <a class="dropdown-item" href="#">item 3</a>
+                                    <a class="dropdown-item" href="#">item 4</a>
+                                    <a class="dropdown-item" href="#">item 5</a>
+                                    <a class="dropdown-item" href="#">item 6</a>
+                                </div>
+                            </div>
+                            <a href="#" class="box__link">
+                                Stelle finden
+                            </a>
+													</div>
+                        </section>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h3 class="content-line__title">Aktuelles & Veranstaltungen</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4 col-lg-3">
+                <section>
+									<div class="b-rounded b-rounded_fz">
+                    <div class="b-text">
+                        <h2>
+                            <span class="f_medium">
+                                Keine bösen Überraschungen! 
+                            </span>
+                        </h2>
+                        <p>
+                            Information und Motivation zur Darmkrebsvorsorge
+                        </p>
+                    </div>
+                    
+                    <h4 class="text-right">
+                        01. April 2017 <br>
+                        Stadthaus Ulm                        
+                    </h4>
+                    <a href="#" class="more-link">Details</a>
+									</div>
+                </section>
+            </div>
+            <div class="col-xs-12 col-md-8 col-lg-9">
+                <div class="panel-group panel-news" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="accordion-header panel">
+                        <div class="panel-heading" role="tab">
+                            <h2>
+                                Nachrichten und Veranstaltungen
+                            </h2>
+                            <a href="#">weitere im Archiv</a>
+                        </div>                        
+                    </div>
+                    <!-- Accordion Item -->
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3">
+                                    <a class="date-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        30. März 2017
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-md-9">
+                                    <a class="accordion-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Gesundheitsvorsorge für die Truppe <span class="tag">[ News ]</span>
+                                        <span class="dropdown-btn"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                                        <p>
+                                            Professor Dr. Florian Gebhard, Ärztlicher Direktor der Ulmer 
+                                            Universitätsklinik für Unfall-, Hand-, plastische und 
+                                            Wiederherstellungschirurgie, wurde zum 30. März in den ...
+                                        </p>
+                                        <a href="#" class="more-link">weiterlesen</a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/photo.jpg" alt="photo" class="img-responsive">
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Accordion Item -->
+                    <!-- Accordion Item -->
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3">
+                                    <a class="date-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        24. März 2017
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-md-9">
+                                    <a class="accordion-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Spende für kranke Kinder <span class="tag">[ News ]</span>
+                                        <span class="dropdown-btn"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                                        <p>
+                                            Professor Dr. Florian Gebhard, Ärztlicher Direktor der Ulmer 
+                                            Universitätsklinik für Unfall-, Hand-, plastische und 
+                                            Wiederherstellungschirurgie, wurde zum 30. März in den ...
+                                        </p>
+                                        <a href="#" class="more-link">weiterlesen</a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/photo.jpg" alt="photo" class="img-responsive">
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Accordion Item -->
+                    <!-- Accordion Item -->
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3">
+                                    <a class="date-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        16. März 2017
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-md-9">
+                                    <a class="accordion-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        Spielen und Wachsen <span class="tag">[ Veranstaltung ]</span>
+                                        <span class="dropdown-btn"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                                        <p>
+                                            Professor Dr. Florian Gebhard, Ärztlicher Direktor der Ulmer 
+                                            Universitätsklinik für Unfall-, Hand-, plastische und 
+                                            Wiederherstellungschirurgie, wurde zum 30. März in den ...
+                                        </p>
+                                        <a href="#" class="more-link">weiterlesen</a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/photo.jpg" alt="photo" class="img-responsive">
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Accordion Item -->
+                    <!-- Accordion Item -->
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3">
+                                    <a class="date-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        03. März 2017
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-md-9">
+                                    <a class="accordion-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Gefragte Berufe mit großartigen Aussichten <span class="tag">[ Veranstaltung ]</span>
+                                        <span class="dropdown-btn"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                                        <p>
+                                            Professor Dr. Florian Gebhard, Ärztlicher Direktor der Ulmer 
+                                            Universitätsklinik für Unfall-, Hand-, plastische und 
+                                            Wiederherstellungschirurgie, wurde zum 30. März in den ...
+                                        </p>
+                                        <a href="#" class="more-link">weiterlesen</a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/photo.jpg" alt="photo" class="img-responsive">
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Accordion Item -->
+                    <!-- Accordion Item -->
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3">
+                                    <a class="date-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                        02. März 2017
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-md-9">
+                                    <a class="accordion-btn collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                        Universitätsklinikum Ulm sichert den Hebammennachwuchs  <span class="tag">[ News ]</span>
+                                        <span class="dropdown-btn"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                                        <p>
+                                            Professor Dr. Florian Gebhard, Ärztlicher Direktor der Ulmer 
+                                            Universitätsklinik für Unfall-, Hand-, plastische und 
+                                            Wiederherstellungschirurgie, wurde zum 30. März in den ...
+                                        </p>
+                                        <a href="#" class="more-link">weiterlesen</a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <img src="typo3conf/ext/as_template/Resources/Public/Images/Dummy/photo.jpg" alt="photo" class="img-responsive">
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Accordion Item -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h3 class="content-line__title">Forschung & Lehre</h3>
+            </div>
+        </div>
+				<div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <section>
+									<div class="box" data-mh="group-3">
+                    <div class="b-text" data-mh="group-3_1">
+                        <h2>
+                            <span class="f_medium">Auditive Verarbeitungsstörungen </span>
+                            Von den Fallstricken der Diagnostik zu den Grenzen der Therapie
+                        </h2>
+                    </div>
+										<a href="#" class="box__link">mehr erfahren</a>
+									</div>
+                </section>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <section>
+									<div class="box box_blue" data-mh="group-3">
+                    <div class="b-text" data-mh="group-3_1">
+                        <h2>
+                            <span class="f_medium">Auditive Verarbeitungsstörungen </span>
+                            Von den Fallstricken der Diagnostik zu den Grenzen der Therapie
+                        </h2>
+                    </div>
+										<a href="#" class="box__link">mehr erfahren</a>
+									</div>
+                </section>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <section>
+									<div class="box box_green" data-mh="group-3">
+                    <div class="b-text" data-mh="group-3_1">
+                        <h2>
+                            <span class="f_medium">Gemeinsam gegen den Fuchsbandwurm </span>
+                            Ulmer Echinokokkose-Forscher weiten Kooperation aus
+                        </h2>
+                    </div>
+										<a href="#" class="box__link">mehr erfahren</a>
+									</div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="hidden-xs col-sm-3 col-md-2 footer__logo">
+                        <a href="#">
+                            <img src="typo3conf/ext/as_template/Resources/Public/Images/logo.png" alt="logo" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-9 col-md-10">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-9">
+                                <div class="wraper">
+                                    <ul class="footer__nav-links">
+																				<li><a href="#">Impressum</a></li><li><a href="#">Sitemap</a></li><li><a href="#">Kontakt</a></li><li><a href="#">Anreise</a></li><li><a href="#">Lageplan</a></li><li><a href="#">Presse</a></li><li><a href="#">Stellenangebote</a></li><li><a href="#">Ihre Meinung</a></li><li class="social hidden-xs"><a href="#" class="fb"></a></li><li class="social hidden-xs"><a href="#" class="tw"></a></li><li class="social hidden-xs"><a href="#" class="yt"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hidden-xs col-sm-12 col-md-3 text-right">
+                                <div class="wraper">
+                                    <ul class="footer__nav-links">
+                                        <li><a href="#" class="up">Seitenanfang <span class="ico"></span></a></li>
+                                        <li><a href="#" class="print">Drucken <span class="ico"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__links-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-2 white-bg-column">
+                        <h4>
+                            Universitätsklinikum Ulm
+                        </h4>
+                        <p>89070 Ulm</p>
+                        <p>Telefon: 0731/500-0</p>
+                        <p>Telefax: 0731/500-43002</p>
+                        <p>E-Mail: info@uniklinik-ulm.de</p>
+                        <div class="scheme hidden-xs">
+                            <p>Lagepläne</p>
+                            <img src="typo3conf/ext/as_template/Resources/Public/Images/scheme.jpg" alt="scheme" class="img-responsive">
+                        </div>
+                        <ul class="socials-black-list hidden-sm hidden-md hidden-lg">
+                            <li><a href="#" class="fb"></a></li>
+                            <li><a href="#" class="tw"></a></li>
+                            <li><a href="#" class="yt"></a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden-xs col-sm-9 col-md-10">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-2 col-custom-width">
+                                <h4>Patienten & Besucher</h4>
+                                <ul>
+                                    <li><a href="#">Experten finden</a></li>
+                                    <li><a href="#">Ihren Aufenthalt planen</a></li>
+                                    <li><a href="#">Anreisen & Parken</a></li>
+                                    <li><a href="#">Besuch bekommen</a></li>
+                                    <li><a href="#">Hygiene im Klinikum</a></li>
+                                    <li><a href="#">Nach Ihrem Aufenthalt</a></li>
+                                    <li><a href="#">Einkaufen & Services</a></li>
+                                    <li><a href="#">An klinischen Studien teilnehmen</a></li>
+                                    <li><a href="#">Veranstaltungen & Termine</a></li>
+                                    <li><a href="#">Mediathek</a></li>
+                                    <li><a href="#">Lob und Tadel</a></li>
+                                    <li><a href="#">Häufige Fragen</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-md-2 col-custom-width">
+                                <h4>Kliniken & Zentren</h4>
+                                <ul>
+                                    <li><a href="#">Über uns</a></li>
+                                    <li><a href="#">Sprechstunden / Ambulanzen</a></li>
+                                    <li><a href="#">Infos zum Klinikaufenthalt</a></li>
+                                    <li><a href="#">Infos für Ärzte</a></li>
+                                    <li><a href="#">Forschung/Klinische Studien</a></li>
+                                    <li><a href="#">Lehre</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-md-2 col-custom-width">
+                                <h4>Forschung</h4>
+                                <ul>
+                                    <li><a href="#">Forschungsschwerpunkte</a></li>
+                                    <li><a href="#">Aktuelle klinische Studien am Uniklinikum</a></li>
+                                    <li><a href="#">Medizinische Fakultät</a></li>
+                                    <li><a href="#">Ansprechpartner</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-md-2 col-custom-width">
+                                <h4>Ausbildung & Karriere</h4>
+                                <ul>
+                                    <li><a href="#">Berufsgruppen</a></li>
+                                    <li><a href="#">Arbeiten am Uniklinikum Ulm</a></li>
+                                    <li><a href="#">Stellenmarkt / Jetzt bewerben</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-md-2 col-custom-width">
+                                <h4>Über uns</h4>
+                                <ul>
+                                    <li><a href="#">Zahlen & Fakten</a></li>
+                                    <li><a href="#">Leitbild</a></li>
+                                    <li><a href="#">Management</a></li>
+                                    <li><a href="#">Zentrale Einrichtungen</a></li>
+                                    <li><a href="#">Pflege am UKU</a></li>
+                                    <li><a href="#">Dienstleistungsgesellschaft Universitätsklinikum Ulm mbH</a></li>
+                                    <li><a href="#">Universitätsgesellschaft</a></li>
+                                    <li><a href="#">Universitätsstiftung</a></li>
+                                    <li><a href="#">Veranstaltungen & Termine</a></li>
+                                    <li><a href="#">Aktuelles & Publikationen</a></li>
+                                    <li><a href="#">Soziale Verantwortung</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Kooperierende Einrichtungen</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#header" class="scroll-top-btn"></a>
+
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/Libs/jquery.js"></script>
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/Libs/bootstrap.js"></script>
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/Libs/slick.js"></script>
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/Libs/jquery.matchHeight-min.js"></script>
+    <script src="typo3conf/ext/as_template/Resources/Public/JavaScript/functions.js"></script>
+    <script>
+        $('.slider__wraper').slick({
+            autoplay: true,
+            autoplaySpeed: 4000,
+            variableWidth: true,
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            dots: true,
+            appendDots: $('.dots'),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        centerMode: false
+                    }
+                }
+            ]
+        });
+    </script>
+    
+</body>
+</html>

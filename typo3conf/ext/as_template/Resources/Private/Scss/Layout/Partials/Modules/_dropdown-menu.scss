@@ -1,0 +1,20 @@
+.dropdown-menu {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  overflow-y: auto;
+  .dropdown-item {
+    display: block;
+    border: none;
+    padding: 5px 20px;
+    margin: 0;
+    color: $grey;
+    font-family: 'DaxlinePro-Medium';
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 999999;
+    &:hover {
+      background-color: $grey_10;
+    }
+  }
+}

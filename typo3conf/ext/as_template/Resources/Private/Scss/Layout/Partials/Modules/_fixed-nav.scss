@@ -1,0 +1,55 @@
+.fixed-nav ul.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+  background-color: $white;
+
+  &.affix {
+    top: 100px;
+    bottom: auto;
+    width: 100%;
+  }
+  &.affix-bottom {
+    position: absolute;
+    top: auto;
+  }
+  li {
+    position: relative;
+
+    a {
+      font-family: 'DaxlinePro-Regular';
+      font-size: 18px;
+      color: $grey;
+      text-decoration: none;
+      padding: 10px 20px 10px 10px;
+      border-bottom: 2px solid $grey_20;
+      position: relative;
+      word-wrap: break-word;
+    }
+    &:after {
+      content: '';
+      display: none;
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 4px);
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid $white;
+      border-right: 2px solid $white;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &.active {
+      &:after {
+        display: block;
+      }
+      a {
+        font-family: 'DaxlinePro-Bold';
+        color: $white;
+        background-color: $blue;
+      }
+    }
+  }
+}

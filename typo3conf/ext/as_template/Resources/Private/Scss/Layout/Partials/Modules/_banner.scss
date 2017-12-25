@@ -1,0 +1,51 @@
+.banner {
+  .banner__b-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $white_trans_50;
+    width: 100%;
+  }
+  .banner__b-info__left {
+    padding: 15px 0 15px 40px;
+    h2, h1 {
+      font-size: 34px;
+      font-family: 'DaxlinePro-Light';
+      color: $grey;
+      margin: 20px 0 0 0;
+      .f_medium {
+        color: $blue;
+      }
+    }
+    h1 {
+      margin: 0 0 20px 0;
+    }
+  }
+  .banner__b-info__right {
+    padding: 15px 40px 15px 0;
+    h4 {
+      font-size: 21px;
+      font-family: 'DaxlinePro-Regular';
+      position: relative;
+      top: 20px;
+      .f_bold {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.banner__b-info_m .banner__b-info__left h2,
+.banner__b-info_m .banner__b-info__left h1 {
+  font-size: 21px;
+  font-family: 'DaxlinePro-Light';
+  margin: 20px 0 0 0;
+  color: $grey;
+  .f_medium {
+    color: $blue;
+  }
+}
+
+.banner__b-info_m .banner__b-info__left h1 {
+  margin: 0 0 20px 0;
+}

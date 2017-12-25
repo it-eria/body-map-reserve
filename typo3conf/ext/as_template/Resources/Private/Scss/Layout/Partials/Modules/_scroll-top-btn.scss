@@ -1,0 +1,15 @@
+.scroll-top-btn {
+  display: none;
+  width: 60px;
+  height: 60px;
+  background-color: $blue;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99999;
+  right: 10px;
+  bottom: 10px;
+  background-image: url(../Images/scroll-top-arr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

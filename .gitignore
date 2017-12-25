@@ -1,0 +1,29 @@
+# Mac
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+
+# Eclipse
+.project
+.buildpath
+.settings
+.classpath
+.externalToolBuilders
+
+# PHP Storm
+.idea
+
+# vi
+*~
+*.swp
+
+# Prepros
+prepros.cfg
+
+# Node modules
+node_modules/
+
+# VS Code
+.vscode/

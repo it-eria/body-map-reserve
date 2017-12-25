@@ -1,0 +1,236 @@
+.schwerpunkte {
+  margin-bottom: 60px;
+  h2 {
+    margin: 0 0 19px 0;
+    padding: 0;
+    font-family: "DaxlinePro-Medium";
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 2px;
+      position: relative;
+      a {
+        display: block;
+        font-family: 'DaxlinePro-Medium';
+        font-size: 24px;
+        background-color: $grey_10;
+        color: $grey;
+        text-decoration: none;
+        margin: 0;
+        padding: 25px 50px 25px 20px;
+        line-height: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          opacity: 0.9;
+        }
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          right: 24px;
+          top: calc(50% - 22px);
+          width: 24px;
+          height: 44px;
+          background-image: url(../Images/schwerpunkte-arr-dark.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  &__more-link {
+    display: block;
+    font-family: 'DaxlinePro-Bold';
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: $grey;
+    opacity: 0.5;
+		clear: both;
+    span {
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      border-radius: 50%;
+      background-color: $grey;
+      &:last-child {
+        margin-right: 15px;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+
+  &__blue {
+    h2 {
+      color: $blue;
+    }
+    ul {
+      li {
+        a {
+          background-color: $blue;
+          color: $white;
+          &:hover {
+            background-color: $blue;
+          }
+          &:after {
+            background-image: url(../Images/schwerpunkte-arr.png);
+          }
+        }
+      }
+    }
+
+    .schwerpunkte__more-link {
+      color: $blue;
+      span {
+        background-color: $blue;
+      }
+    }
+  }
+
+  &__green {
+    h2 {
+      color: $green;
+    }
+    ul {
+      li {
+        a {
+          background-color: $green;
+          color: $white;
+          &:hover {
+            background-color: $green;
+          }
+          &:after {
+            background-image: url(../Images/schwerpunkte-arr.png);
+          }
+        }
+      }
+    }
+
+    .schwerpunkte__more-link {
+      color: $green;
+      span {
+        background-color: $green;
+      }
+    }
+  }
+
+  &__tuerkis {
+    h2 {
+      color: $tuerkis;
+    }
+    ul {
+      li {
+        a {
+          background-color: $tuerkis;
+          color: $white;
+          &:hover {
+            background-color: $tuerkis;
+          }
+          &:after {
+            background-image: url(../Images/schwerpunkte-arr.png);
+          }
+        }
+      }
+    }
+
+    .schwerpunkte__more-link {
+      color: $tuerkis;
+      span {
+        background-color: $tuerkis;
+      }
+    }
+  }
+
+  &__blue_zwei {
+    h2 {
+      color: $blue_zwei;
+    }
+    ul {
+      li {
+        a {
+          background-color: $blue_zwei;
+          color: $white;
+          &:hover {
+            background-color: $blue_zwei;
+          }
+          &:after {
+            background-image: url(../Images/schwerpunkte-arr.png);
+          }
+        }
+      }
+    }
+
+    .schwerpunkte__more-link {
+      color: $blue_zwei;
+      span {
+        background-color: $blue_zwei;
+      }
+    }
+  }
+
+  &__grey {
+    h2 {
+      color: $grey;
+    }
+    ul {
+      li {
+        a {
+          background-color: $grey;
+          color: $white;
+          &:hover {
+            background-color: $grey;
+          }
+          &:after {
+            background-image: url(../Images/schwerpunkte-arr.png);
+          }
+        }
+      }
+    }
+
+    .schwerpunkte__more-link {
+      color: $grey;
+      span {
+        background-color: $grey;
+      }
+    }
+  }
+
+	&__cols2 {
+		ul {
+      li {
+				width: 50%;
+				float: left;
+				border-right: 2px solid $white;
+				&:nth-child(2n) {
+					border-right: 0;
+				}
+      }
+    }
+	}
+
+	&__cols3 {
+		ul {
+      li {
+				width: 33.33333333%;
+				float: left;
+				border-right: 2px solid $white;
+				&:nth-child(3n) {
+					border-right: 0;
+				}
+      }
+    }
+	}
+
+}
